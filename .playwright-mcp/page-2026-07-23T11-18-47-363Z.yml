@@ -1,0 +1,101 @@
+- generic [active]:
+  - generic [ref=f45e2]:
+    - navigation [ref=f45e3]:
+      - complementary [ref=f45e4]:
+        - button "gloriawan669" [ref=f45e6] [cursor=pointer]
+        - navigation [ref=f45e15]:
+          - list [ref=f45e16]:
+            - listitem [ref=f45e17]:
+              - link "Emails" [ref=f45e18] [cursor=pointer]:
+                - /url: /emails
+            - listitem [ref=f45e20]:
+              - link "Broadcasts" [ref=f45e21] [cursor=pointer]:
+                - /url: /broadcasts
+            - listitem [ref=f45e23]:
+              - link "Automations" [ref=f45e24] [cursor=pointer]:
+                - /url: /automations
+            - listitem [ref=f45e26]:
+              - link "Templates" [ref=f45e27] [cursor=pointer]:
+                - /url: /templates
+            - listitem [ref=f45e29]:
+              - link "Audience" [ref=f45e30] [cursor=pointer]:
+                - /url: /audience
+            - listitem [ref=f45e32]:
+              - link "Metrics" [ref=f45e33] [cursor=pointer]:
+                - /url: /metrics
+            - listitem [ref=f45e35]:
+              - link "Domains" [ref=f45e36] [cursor=pointer]:
+                - /url: /domains
+            - listitem [ref=f45e38]:
+              - link "Logs" [ref=f45e39] [cursor=pointer]:
+                - /url: /logs
+            - listitem [ref=f45e41]:
+              - link "API keys" [ref=f45e42] [cursor=pointer]:
+                - /url: /api-keys
+            - listitem [ref=f45e44]:
+              - link "Webhooks" [ref=f45e45] [cursor=pointer]:
+                - /url: /webhooks
+            - listitem [ref=f45e47]:
+              - link "Settings" [ref=f45e48] [cursor=pointer]:
+                - /url: /settings
+        - button "gloriawan669@gmail.com" [ref=f45e50] [cursor=pointer]
+    - generic [ref=f45e58]:
+      - generic [ref=f45e59]:
+        - link "Docs" [ref=f45e61] [cursor=pointer]:
+          - /url: https://resend.com/docs/dashboard/settings/team
+        - button "Need help? H" [ref=f45e62] [cursor=pointer]:
+          - generic [ref=f45e63]: Need help?
+          - generic [ref=f45e65]: H
+      - generic [ref=f45e68]:
+        - heading "Settings" [level=1] [ref=f45e70]
+        - generic [ref=f45e71]:
+          - tablist [ref=f45e73]:
+            - tab "Usage" [ref=f45e74] [cursor=pointer]
+            - tab "Billing" [ref=f45e75] [cursor=pointer]
+            - tab "Team" [selected] [ref=f45e76] [cursor=pointer]
+            - tab "SMTP" [ref=f45e77] [cursor=pointer]
+            - tab "Integrations" [ref=f45e78] [cursor=pointer]
+            - tab "Unsubscribe page" [ref=f45e79] [cursor=pointer]
+            - tab "Documents" [ref=f45e80] [cursor=pointer]
+          - generic [ref=f45e81]:
+            - generic [ref=f45e82]:
+              - heading "Overview" [level=1] [ref=f45e84]
+              - generic [ref=f45e85]:
+                - generic [ref=f45e86]: Avatar
+                - generic [ref=f45e89]:
+                  - button [ref=f45e91] [cursor=pointer]:
+                    - generic [ref=f45e95]:
+                      - button "Choose File" [ref=f45e96]
+                      - text: Update image
+                  - paragraph [ref=f45e97]: Maximum file size is 1MB.
+              - generic [ref=f45e98]:
+                - generic [ref=f45e99]:
+                  - generic [ref=f45e100]: Team name
+                  - textbox "Avatar Team name" [ref=f45e101]:
+                    - /placeholder: Your team name
+                - button "Save" [disabled] [ref=f45e103]
+            - generic [ref=f45e106]:
+              - generic [ref=f45e107]:
+                - tablist [ref=f45e108]:
+                  - tab "Members" [selected] [ref=f45e109] [cursor=pointer]
+                  - tab "Authorized apps" [ref=f45e110] [cursor=pointer]
+                - button "Invite" [ref=f45e111] [cursor=pointer]
+              - tabpanel [ref=f45e113]:
+                - generic [ref=f45e114]:
+                  - paragraph [ref=f45e116]: Email
+                  - paragraph [ref=f45e118]: Role
+                  - paragraph [ref=f45e120]: Enabled MFA
+                - status [ref=f45e121]:
+                  - generic [ref=f45e124]: Loading...
+            - generic [ref=f45e125]:
+              - heading "Exports" [level=1] [ref=f45e127]
+              - generic [ref=f45e128]:
+                - paragraph [ref=f45e129]: All available CSV exports for your team are listed here.
+                - link "Go to page" [ref=f45e130] [cursor=pointer]:
+                  - /url: /settings/exports
+            - generic [ref=f45e132]:
+              - heading "Delete team" [level=1] [ref=f45e134]
+              - generic [ref=f45e135]:
+                - paragraph [ref=f45e136]: Permanently delete the team and all of its contents from Resend.
+                - button "Delete team" [ref=f45e137] [cursor=pointer]
+  - region "Notifications alt+T"

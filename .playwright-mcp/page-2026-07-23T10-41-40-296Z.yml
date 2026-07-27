@@ -1,0 +1,22 @@
+- generic [active] [ref=f9e1]:
+  - generic [ref=f9e2]:
+    - generic [ref=f9e5]:
+      - button "Toggle Sidebar" [ref=f9e7] [cursor=pointer]
+      - generic [ref=f9e10]:
+        - generic [ref=f9e11]: Workflows
+        - button "New workflow" [ref=f9e12] [cursor=pointer]
+        - list [ref=f9e16]:
+          - listitem [ref=f9e17]:
+            - link "pleasant-manatee" [ref=f9e18] [cursor=pointer]:
+              - /url: /workflows/db418189-f14a-4439-8474-08e2b0a5b7f5
+          - listitem [ref=f9e20]:
+            - link "liquid-porcupine" [ref=f9e21] [cursor=pointer]:
+              - /url: /workflows/9333c2c8-704f-4cdd-b3f0-6c587db3d63f
+    - main [ref=f9e24]:
+      - generic [ref=f9e25]:
+        - generic [ref=f9e26]:
+          - generic [ref=f9e28]: No workflow selected
+          - generic [ref=f9e29]: Select a workflow from the sidebar or create a new one to get started.
+        - button "New workflow" [ref=f9e31] [cursor=pointer]
+  - region "Notifications alt+T"
+  - alert [ref=f9e32]

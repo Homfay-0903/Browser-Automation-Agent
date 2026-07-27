@@ -1,0 +1,77 @@
+- generic [ref=f8e1]:
+  - generic [ref=f8e47]:
+    - generic [ref=f8e50]:
+      - generic [ref=f8e51]:
+        - button "Open organization switcher" [ref=f8e368] [cursor=pointer]:
+          - generic [ref=f8e54]:
+            - img "Homfay's Organization's logo" [ref=f8e369]
+            - generic "Homfay's Organization" [ref=f8e370]
+        - button "Toggle Sidebar" [active] [ref=f8e442] [cursor=pointer]
+      - generic [ref=f8e66]:
+        - generic [ref=f8e470]: Workflows
+        - button "New workflow" [ref=f8e471] [cursor=pointer]
+        - list [ref=f8e475]:
+          - listitem [ref=f8e476]:
+            - link "pleasant-manatee" [ref=f8e477] [cursor=pointer]:
+              - /url: /workflows/db418189-f14a-4439-8474-08e2b0a5b7f5
+          - listitem [ref=f8e479]:
+            - link "liquid-porcupine" [ref=f8e480] [cursor=pointer]:
+              - /url: /workflows/9333c2c8-704f-4cdd-b3f0-6c587db3d63f
+      - button "Open user menu" [ref=f8e444] [cursor=pointer]:
+        - img "gloria wan's logo" [ref=f8e445]
+    - main [ref=f8e86]:
+      - generic [ref=f8e201]:
+        - generic [ref=f8e204]:
+          - application [ref=f8e208]:
+            - generic [ref=f8e210]:
+              - generic:
+                - generic:
+                  - group [ref=f8e211]:
+                    - generic [ref=f8e212]: Start
+                  - group [ref=f8e223]:
+                    - generic [ref=f8e224]: Open URL 1
+            - generic "Control Panel" [ref=f8e446]:
+              - button "Zoom In" [disabled]
+              - button "Zoom Out" [ref=f8e447] [cursor=pointer]
+              - button "Fit View" [ref=f8e448] [cursor=pointer]
+              - button "Toggle Interactivity" [ref=f8e449] [cursor=pointer]
+            - img "gloria wan" [ref=f8e450]
+            - link "React Flow attribution" [ref=f8e451] [cursor=pointer]:
+              - /url: https://reactflow.dev/attribution
+              - text: React Flow
+          - separator [ref=f8e251]
+          - generic [ref=f8e252]: No runs yet
+        - separator [ref=f8e258]
+        - generic [ref=f8e263]:
+          - generic [ref=f8e264]:
+            - button [ref=f8e265] [cursor=pointer]
+            - button "Run" [ref=f8e452] [cursor=pointer]
+          - tablist [ref=f8e267]:
+            - tab "Toolbar" [selected] [ref=f8e453] [cursor=pointer]
+            - tab "Editor" [ref=f8e454] [cursor=pointer]
+          - tabpanel "Toolbar" [ref=f8e455]:
+            - generic [ref=f8e271]:
+              - generic [ref=f8e272]: Toolbar
+              - generic [ref=f8e274]:
+                - generic [ref=f8e275]:
+                  - heading [level=3] [ref=f8e456]:
+                    - button "Triggers" [expanded] [ref=f8e457] [cursor=pointer]
+                  - region "Triggers" [ref=f8e458]:
+                    - button [ref=f8e459] [cursor=pointer]
+                - generic [ref=f8e282]:
+                  - heading [level=3] [ref=f8e460]:
+                    - button "Actions" [expanded] [ref=f8e461] [cursor=pointer]
+                  - region "Actions" [ref=f8e462]:
+                    - generic [ref=f8e286]:
+                      - button [ref=f8e463] [cursor=pointer]
+                      - button [ref=f8e464] [cursor=pointer]
+                      - button [ref=f8e465] [cursor=pointer]
+                      - button [ref=f8e466] [cursor=pointer]
+                      - button [ref=f8e467] [cursor=pointer]
+                      - button [ref=f8e468] [cursor=pointer]
+  - region "Notifications alt+T"
+  - alert [ref=f8e29]
+  - generic [ref=f8e175]:
+    - link "Liveblocks" [ref=f8e469] [cursor=pointer]:
+      - /url: https://lblcks.io/badge
+    - button [ref=f8e185] [cursor=pointer]

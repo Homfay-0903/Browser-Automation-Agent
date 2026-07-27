@@ -1,0 +1,178 @@
+- generic [active]:
+  - generic [ref=f35e2]:
+    - navigation [ref=f35e3]:
+      - complementary [ref=f35e4]:
+        - button "gloriawan669" [ref=f35e6] [cursor=pointer]
+        - navigation [ref=f35e15]:
+          - list [ref=f35e16]:
+            - listitem [ref=f35e17]:
+              - link "Emails" [ref=f35e18] [cursor=pointer]:
+                - /url: /emails
+            - listitem [ref=f35e20]:
+              - link "Broadcasts" [ref=f35e21] [cursor=pointer]:
+                - /url: /broadcasts
+            - listitem [ref=f35e23]:
+              - link "Automations" [ref=f35e24] [cursor=pointer]:
+                - /url: /automations
+            - listitem [ref=f35e26]:
+              - link "Templates" [ref=f35e27] [cursor=pointer]:
+                - /url: /templates
+            - listitem [ref=f35e29]:
+              - link "Audience" [ref=f35e30] [cursor=pointer]:
+                - /url: /audience
+            - listitem [ref=f35e32]:
+              - link "Metrics" [ref=f35e33] [cursor=pointer]:
+                - /url: /metrics
+            - listitem [ref=f35e35]:
+              - link "Domains" [ref=f35e36] [cursor=pointer]:
+                - /url: /domains
+            - listitem [ref=f35e38]:
+              - link "Logs" [ref=f35e39] [cursor=pointer]:
+                - /url: /logs
+            - listitem [ref=f35e41]:
+              - link "API keys" [ref=f35e42] [cursor=pointer]:
+                - /url: /api-keys
+            - listitem [ref=f35e44]:
+              - link "Webhooks" [ref=f35e45] [cursor=pointer]:
+                - /url: /webhooks
+            - listitem [ref=f35e47]:
+              - link "Settings" [ref=f35e48] [cursor=pointer]:
+                - /url: /settings
+        - button "gloriawan669@gmail.com" [ref=f35e50] [cursor=pointer]
+    - generic [ref=f35e58]:
+      - generic [ref=f35e59]:
+        - link "Docs" [ref=f35e61] [cursor=pointer]:
+          - /url: https://resend.com/docs
+        - button "Need help? H" [ref=f35e62] [cursor=pointer]:
+          - generic [ref=f35e63]: Need help?
+          - generic [ref=f35e65]: H
+      - generic [ref=f35e68]:
+        - heading "Settings" [level=1] [ref=f35e70]
+        - generic [ref=f35e71]:
+          - tablist [ref=f35e73]:
+            - tab "Usage" [selected] [ref=f35e74] [cursor=pointer]
+            - tab "Billing" [ref=f35e75] [cursor=pointer]
+            - tab "Team" [ref=f35e76] [cursor=pointer]
+            - tab "SMTP" [ref=f35e77] [cursor=pointer]
+            - tab "Integrations" [ref=f35e78] [cursor=pointer]
+            - tab "Unsubscribe page" [ref=f35e79] [cursor=pointer]
+            - tab "Documents" [ref=f35e80] [cursor=pointer]
+          - generic [ref=f35e81]:
+            - generic [ref=f35e82]:
+              - generic [ref=f35e83]:
+                - heading "Transactional" [level=2] [ref=f35e84]
+                - generic [ref=f35e85]: Integrate email into your app using the Resend API or SMTP interface.
+                - button "Upgrade" [ref=f35e86] [cursor=pointer]
+              - generic [ref=f35e88]:
+                - heading "Free" [level=3] [ref=f35e90]
+                - table [ref=f35e93]:
+                  - rowgroup [ref=f35e94]:
+                    - row [ref=f35e95] [cursor=pointer]:
+                      - cell [ref=f35e96]
+                      - cell "Monthly limit" [ref=f35e100]
+                      - cell [ref=f35e101]:
+                        - generic [ref=f35e103]:
+                          - img "0" [ref=f35e105]
+                          - text: /
+                          - img "0" [ref=f35e110]
+                    - row [ref=f35e116] [cursor=pointer]:
+                      - cell [ref=f35e117]
+                      - cell "Daily limit" [ref=f35e121]
+                      - cell [ref=f35e122]:
+                        - generic [ref=f35e124]:
+                          - img "0" [ref=f35e126]
+                          - text: /
+                          - img "0" [ref=f35e131]
+            - generic [ref=f35e137]:
+              - generic [ref=f35e138]:
+                - heading "Marketing" [level=2] [ref=f35e139]
+                - generic [ref=f35e140]: Design and send marketing emails using Broadcasts and Audiences.
+                - button "Upgrade" [ref=f35e141] [cursor=pointer]
+              - generic [ref=f35e143]:
+                - heading "Free" [level=3] [ref=f35e145]
+                - table [ref=f35e148]:
+                  - rowgroup [ref=f35e149]:
+                    - row [ref=f35e150]:
+                      - cell [ref=f35e151]
+                      - cell "Contacts limit" [ref=f35e155]
+                      - cell [ref=f35e156]:
+                        - generic [ref=f35e158]:
+                          - img "0" [ref=f35e160]
+                          - text: /
+                          - img "0" [ref=f35e165]
+                    - row [ref=f35e169]:
+                      - cell [ref=f35e170]
+                      - cell "Segments limit" [ref=f35e174]
+                      - cell [ref=f35e175]:
+                        - generic [ref=f35e177]:
+                          - img "0" [ref=f35e179]
+                          - text: /
+                          - img "0" [ref=f35e184]
+                    - row [ref=f35e188]:
+                      - cell [ref=f35e189]
+                      - cell "Broadcasts limit" [ref=f35e192]
+                      - cell "Unlimited" [ref=f35e193]
+            - generic [ref=f35e196]:
+              - generic [ref=f35e197]:
+                - heading "Team" [level=2] [ref=f35e198]
+                - generic [ref=f35e199]: Understand the quotas and limits for your team.
+              - generic [ref=f35e200]:
+                - heading "Free" [level=3] [ref=f35e202]
+                - table [ref=f35e205]:
+                  - rowgroup [ref=f35e206]:
+                    - row [ref=f35e207]:
+                      - cell [ref=f35e208]
+                      - cell "AI credits" [ref=f35e212]
+                      - cell [ref=f35e213]:
+                        - generic [ref=f35e215]:
+                          - img "0" [ref=f35e217]
+                          - text: /
+                          - img "0" [ref=f35e222]
+                    - row [ref=f35e226]:
+                      - cell [ref=f35e227]
+                      - cell "Automations" [ref=f35e231]
+                      - cell [ref=f35e232]:
+                        - generic [ref=f35e234]:
+                          - img "0" [ref=f35e236]
+                          - text: /
+                          - img "0" [ref=f35e241]
+                    - row [ref=f35e245]:
+                      - cell [ref=f35e246]
+                      - cell "Domains" [ref=f35e250]
+                      - cell [ref=f35e251]:
+                        - generic [ref=f35e253]:
+                          - img "0" [ref=f35e255]
+                          - text: /
+                          - img "0" [ref=f35e260]
+                    - row [ref=f35e264]:
+                      - cell [ref=f35e265]
+                      - cell "Rate limit" [ref=f35e268]
+                      - cell "10 req/s" [ref=f35e269]
+            - heading "Extras" [level=1] [ref=f35e270]
+            - generic [ref=f35e271]:
+              - generic [ref=f35e272]:
+                - heading "Pay-as-you-go" [level=2] [ref=f35e273]
+                - generic [ref=f35e274]: Continue using Resend beyond your quota.
+              - generic [ref=f35e276]:
+                - heading "Transactional · $0.90 / per 1,000 emails" [level=3] [ref=f35e278]
+                - paragraph [ref=f35e279]: When enabled, you will continue sending and receiving transactional emails beyond your quota. Resend will automatically charge $0.90 for each additional bucket of 1,000 emails.
+                - generic [ref=f35e280]:
+                  - heading "Automations · $0.0015 / per run" [level=3] [ref=f35e282]
+                  - paragraph [ref=f35e283]: Start with 10,000 Automation Runs for free, and scale as you need. Resend automatically charges for each run beyond the free limit.
+                - switch [disabled] [ref=f35e284]
+                - checkbox [disabled] [ref=f35e286]
+            - generic [ref=f35e287]:
+              - generic [ref=f35e288]:
+                - heading "Add-ons" [level=2] [ref=f35e289]
+                - generic [ref=f35e290]: Get even more of Resend with special add-ons.
+              - generic [ref=f35e292]:
+                - heading "Dedicated IPs - $30 / mo" [level=3] [ref=f35e294]
+                - paragraph [ref=f35e295]: Resend will provision, warm up, monitor and auto-scale the dedicated IP to ensure consistent deliverability and performance.
+                - paragraph [ref=f35e296]:
+                  - link "Check if a dedicated IP would be right for you" [ref=f35e297] [cursor=pointer]:
+                    - /url: /blog/do-you-need-a-dedicated-ip
+                - generic [ref=f35e298]:
+                  - paragraph [ref=f35e299]: You'll need to be on a Scale plan or higher to request a dedicated IP.
+                  - link "View pricing" [ref=f35e300] [cursor=pointer]:
+                    - /url: /pricing
+  - region "Notifications alt+T"

@@ -1,0 +1,32 @@
+- generic [active] [ref=f12e1]:
+  - generic [ref=f12e167]:
+    - generic [ref=f12e170]:
+      - generic [ref=f12e171]:
+        - button "Open organization switcher" [ref=f12e173] [cursor=pointer]:
+          - generic [ref=f12e174]:
+            - img "Homfay's Organization's logo" [ref=f12e177]
+            - generic "Homfay's Organization" [ref=f12e180]
+        - button "Toggle Sidebar" [ref=f12e183] [cursor=pointer]
+      - generic [ref=f12e186]:
+        - generic [ref=f12e187]: Workflows
+        - button "New workflow" [ref=f12e188] [cursor=pointer]
+        - list [ref=f12e192]:
+          - listitem [ref=f12e193]:
+            - link "interim-woodpecker" [ref=f12e194] [cursor=pointer]:
+              - /url: /workflows/f7fb04d3-fa47-42d3-ba77-eb572f081924
+          - listitem [ref=f12e196]:
+            - link "pleasant-manatee" [ref=f12e197] [cursor=pointer]:
+              - /url: /workflows/db418189-f14a-4439-8474-08e2b0a5b7f5
+          - listitem [ref=f12e199]:
+            - link "liquid-porcupine" [ref=f12e200] [cursor=pointer]:
+              - /url: /workflows/9333c2c8-704f-4cdd-b3f0-6c587db3d63f
+      - button "Open user menu" [ref=f12e204] [cursor=pointer]:
+        - img "gloria wan's logo" [ref=f12e207]
+    - main [ref=f12e209]:
+      - status "Loading" [ref=f12e211]
+  - region "Notifications alt+T"
+  - alert [ref=f12e28]
+  - generic [ref=f12e144]:
+    - link "Liveblocks" [ref=f12e145] [cursor=pointer]:
+      - /url: https://lblcks.io/badge
+    - button [ref=f12e154] [cursor=pointer]

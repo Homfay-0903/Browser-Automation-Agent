@@ -1,0 +1,18 @@
+- generic [active] [ref=f12e1]:
+  - generic [ref=f12e2]:
+    - generic [ref=f12e5]:
+      - button "Toggle Sidebar" [ref=f12e7] [cursor=pointer]
+      - generic [ref=f12e10]:
+        - generic [ref=f12e11]: Workflows
+        - button "New workflow" [ref=f12e12] [cursor=pointer]
+        - list [ref=f12e16]:
+          - listitem [ref=f12e17]:
+            - link "pleasant-manatee" [ref=f12e18] [cursor=pointer]:
+              - /url: /workflows/db418189-f14a-4439-8474-08e2b0a5b7f5
+          - listitem [ref=f12e20]:
+            - link "liquid-porcupine" [ref=f12e21] [cursor=pointer]:
+              - /url: /workflows/9333c2c8-704f-4cdd-b3f0-6c587db3d63f
+    - main [ref=f12e24]:
+      - status "Loading" [ref=f12e26]
+  - region "Notifications alt+T"
+  - alert [ref=f12e28]

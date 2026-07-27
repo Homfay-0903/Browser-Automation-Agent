@@ -1,0 +1,22 @@
+- generic [ref=f7e1]:
+  - generic [ref=f7e2]:
+    - generic [ref=f7e5]:
+      - generic [ref=f7e6]:
+        - button "Open organization switcher" [ref=f7e8] [cursor=pointer]:
+          - generic [ref=f7e9]:
+            - img "Homfay's Organization's logo" [ref=f7e12]
+            - generic "Homfay's Organization" [ref=f7e15]
+        - button "Toggle Sidebar" [ref=f7e18] [cursor=pointer]
+      - generic [ref=f7e21]:
+        - generic [ref=f7e22]: Workflows
+        - button "New workflow" [ref=f7e23] [cursor=pointer]
+        - list [ref=f7e27]:
+          - listitem [ref=f7e28]:
+            - link "liquid-porcupine" [active] [ref=f7e29] [cursor=pointer]:
+              - /url: /workflows/9333c2c8-704f-4cdd-b3f0-6c587db3d63f
+      - button "Open user menu" [ref=f7e33] [cursor=pointer]:
+        - img "gloria wan's logo" [ref=f7e36]
+    - main [ref=f7e38]:
+      - status "Loading" [ref=f7e48]
+  - region "Notifications alt+T"
+  - alert [ref=f7e46]

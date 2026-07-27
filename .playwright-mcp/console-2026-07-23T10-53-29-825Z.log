@@ -1,0 +1,28 @@
+[     166ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[    1410ms] [LOG] [Fast Refresh] done in 1353ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[    2065ms] [LOG] [Client Instrumentation Hook] Slow execution detected: 17ms (Note: Code download overhead is not included in this measurement) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:703
+[    2094ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[    2225ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[    3396ms] [WARNING] Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[    3738ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[    4061ms] [LOG] [Fast Refresh] done in 425ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[    8038ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[    8141ms] [LOG] [Fast Refresh] done in 204ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[   15405ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[   15553ms] [LOG] [Fast Refresh] done in 264ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[  473922ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[  474059ms] [LOG] [Fast Refresh] done in 242ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[  478076ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[  478198ms] [LOG] [Fast Refresh] done in 227ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[  484571ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[  484686ms] [LOG] [Fast Refresh] done in 216ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[  488579ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[  488717ms] [LOG] [Fast Refresh] done in 242ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[  492650ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[  492755ms] [LOG] [Fast Refresh] done in 214ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[  495762ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[  495874ms] [LOG] [Fast Refresh] done in 212ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[  529762ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[  529986ms] [LOG] [Fast Refresh] done in 335ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[  562969ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[  563812ms] [LOG] [Fast Refresh] done in 953ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074

@@ -1,0 +1,93 @@
+- generic [ref=f8e1]:
+  - generic [ref=f8e47]:
+    - generic [ref=f8e50]:
+      - generic [ref=f8e51]:
+        - button [ref=f8e299] [cursor=pointer]:
+          - generic [ref=f8e54]: Homfay's Organization
+        - button [ref=f8e302] [cursor=pointer]:
+          - generic [ref=f8e64]: Toggle Sidebar
+      - generic [ref=f8e66]:
+        - generic [ref=f8e67]: Workflows
+        - button [ref=f8e303] [cursor=pointer]:
+          - generic [ref=f8e70]: New workflow
+        - list [ref=f8e72]:
+          - listitem [ref=f8e73]:
+            - link [ref=f8e304] [cursor=pointer]:
+              - /url: /workflows/db418189-f14a-4439-8474-08e2b0a5b7f5
+              - generic [ref=f8e75]: pleasant-manatee
+          - listitem [ref=f8e76]:
+            - link [ref=f8e305] [cursor=pointer]:
+              - /url: /workflows/9333c2c8-704f-4cdd-b3f0-6c587db3d63f
+              - generic [ref=f8e78]: liquid-porcupine
+      - button [expanded] [ref=f8e306] [cursor=pointer]
+    - main [ref=f8e86]:
+      - generic [ref=f8e201]:
+        - generic [ref=f8e204]:
+          - application [ref=f8e208]:
+            - generic [ref=f8e210]:
+              - generic:
+                - generic:
+                  - group [ref=f8e211]:
+                    - generic [ref=f8e212]: Start
+                  - group [ref=f8e223]:
+                    - generic [ref=f8e224]: Open URL 1
+            - generic [ref=f8e309]:
+              - button [disabled]
+              - button [ref=f8e310] [cursor=pointer]
+              - button [ref=f8e311] [cursor=pointer]
+              - button [ref=f8e312] [cursor=pointer]
+            - link [ref=f8e314] [cursor=pointer]:
+              - /url: https://reactflow.dev/attribution
+              - text: React Flow
+          - separator [ref=f8e251]
+          - generic [ref=f8e252]: No runs yet
+        - separator [ref=f8e258]
+        - generic [ref=f8e263]:
+          - generic [ref=f8e264]:
+            - button [ref=f8e265] [cursor=pointer]
+            - button [ref=f8e315] [cursor=pointer]: Run
+          - tablist [ref=f8e267]:
+            - tab [selected] [ref=f8e316] [cursor=pointer]: Toolbar
+            - tab [ref=f8e317] [cursor=pointer]: Editor
+          - tabpanel [ref=f8e318]:
+            - generic [ref=f8e271]:
+              - generic [ref=f8e272]: Toolbar
+              - generic [ref=f8e274]:
+                - generic [ref=f8e275]:
+                  - heading [level=3] [ref=f8e319]:
+                    - button [expanded] [ref=f8e320] [cursor=pointer]: Triggers
+                  - region [ref=f8e321]:
+                    - button [ref=f8e322] [cursor=pointer]: Start
+                - generic [ref=f8e282]:
+                  - heading [level=3] [ref=f8e323]:
+                    - button [expanded] [ref=f8e324] [cursor=pointer]: Actions
+                  - region [ref=f8e325]:
+                    - generic [ref=f8e286]:
+                      - button [ref=f8e326] [cursor=pointer]: Open URL
+                      - button [ref=f8e327] [cursor=pointer]: Act
+                      - button [ref=f8e328] [cursor=pointer]: Extract
+                      - button [ref=f8e329] [cursor=pointer]: Observe
+                      - button [ref=f8e330] [cursor=pointer]: Agent
+                      - button [ref=f8e331] [cursor=pointer]: Send Email
+  - region "Notifications alt+T"
+  - alert [ref=f8e29]
+  - dialog "Account panel" [active] [ref=f8e333]:
+    - generic [ref=f8e334]:
+      - generic [ref=f8e335]:
+        - img "gloria wan's logo" [ref=f8e338]
+        - generic [ref=f8e340]:
+          - generic [ref=f8e341]: gloria wan
+          - generic [ref=f8e343]: gloriawan669@gmail.com
+      - group "Account actions" [ref=f8e344]:
+        - button [ref=f8e345] [cursor=pointer]
+        - button [ref=f8e349] [cursor=pointer]
+    - generic [ref=f8e355]:
+      - generic [ref=f8e357]:
+        - paragraph [ref=f8e358]: Secured by
+        - link "Clerk logo" [ref=f8e359] [cursor=pointer]:
+          - /url: https://go.clerk.com/components
+      - paragraph [ref=f8e365]: Development mode
+  - generic [ref=f8e175]:
+    - link [ref=f8e367] [cursor=pointer]:
+      - /url: https://lblcks.io/badge
+    - button [ref=f8e185] [cursor=pointer]

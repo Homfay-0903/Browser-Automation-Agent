@@ -1,0 +1,292 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e2]:
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]:
+        - button "Open organization switcher" [ref=f1e8] [cursor=pointer]:
+          - generic [ref=f1e9]:
+            - img "Homfay's Organization's logo" [ref=f1e12]
+            - generic "Homfay's Organization" [ref=f1e15]
+        - button "Toggle Sidebar" [ref=f1e18] [cursor=pointer]
+      - generic [ref=f1e21]:
+        - generic [ref=f1e22]: Workflows
+        - button "New workflow" [ref=f1e23] [cursor=pointer]
+        - list [ref=f1e27]:
+          - listitem [ref=f1e28]:
+            - link "classic-camel" [ref=f1e29] [cursor=pointer]:
+              - /url: /workflows/9b1ae778-b4b8-45c0-97a2-001dc7817f78
+          - listitem [ref=f1e31]:
+            - link "liquid-porcupine" [ref=f1e32] [cursor=pointer]:
+              - /url: /workflows/9333c2c8-704f-4cdd-b3f0-6c587db3d63f
+      - button "Open user menu" [ref=f1e36] [cursor=pointer]:
+        - img "gloria wan's logo" [ref=f1e39]
+    - main [ref=f1e41]:
+      - generic [ref=f1e46]:
+        - generic [ref=f1e49]:
+          - application [ref=f1e53]:
+            - generic [ref=f1e55]:
+              - generic:
+                - generic:
+                  - img:
+                    - group "Edge from start to 39c5d2f8-028d-4066-9fb3-aac65fd353fa" [ref=f1e56] [cursor=pointer]
+                  - img:
+                    - group "Edge from 39c5d2f8-028d-4066-9fb3-aac65fd353fa to 5834f6ed-2807-430e-8e6e-4f745cc2de1b" [ref=f1e59] [cursor=pointer]
+                  - img:
+                    - group "Edge from 5834f6ed-2807-430e-8e6e-4f745cc2de1b to e08b9346-5cb6-40c5-a1b8-7b39c9b54714" [ref=f1e62] [cursor=pointer]
+                  - img:
+                    - group "Edge from e08b9346-5cb6-40c5-a1b8-7b39c9b54714 to 5d269f2b-dd65-40d0-b6bf-48ae0e5fd5a9" [ref=f1e65] [cursor=pointer]
+                - generic:
+                  - group [ref=f1e68]:
+                    - generic [ref=f1e69]: Start
+                  - group [ref=f1e80]:
+                    - generic [ref=f1e81]:
+                      - generic [ref=f1e83]: Open URL 1
+                      - generic [ref=f1e91]:
+                        - generic [ref=f1e92]: URL
+                        - generic [ref=f1e93]: https://www.google.com.hk/?hl=zh_CN
+                  - group [ref=f1e95]:
+                    - generic [ref=f1e96]:
+                      - generic [ref=f1e98]: Act 1
+                      - generic [ref=f1e108]:
+                        - generic [ref=f1e109]:
+                          - generic [ref=f1e110]: Instruction
+                          - generic [ref=f1e111]: 在搜索框中输入"番茄炒蛋的家常做法"，然后点击"Google搜索"搜索按钮
+                        - generic [ref=f1e112]:
+                          - generic [ref=f1e113]: Press Enter after action
+                          - generic [ref=f1e114]: "true"
+                  - group [ref=f1e116]:
+                    - generic [ref=f1e117]:
+                      - generic [ref=f1e119]: Extract 1
+                      - generic [ref=f1e129]:
+                        - generic [ref=f1e130]: Instruction
+                        - generic [ref=f1e131]: 从搜索结果页面中，提取番茄炒蛋的完整制作步骤、所需食材清单和烹饪要点。如果搜索结果有多条，挑选最完整的一条菜谱提取。
+                  - group [ref=f1e133]:
+                    - generic [ref=f1e134]:
+                      - generic [ref=f1e136]: Send Email 1
+                      - generic [ref=f1e143]:
+                        - generic [ref=f1e144]:
+                          - generic [ref=f1e145]: To
+                          - generic [ref=f1e146]: gloriawan669@gmail.com
+                        - generic [ref=f1e147]:
+                          - generic [ref=f1e148]: Subject
+                          - generic [ref=f1e149]: 番茄炒蛋制作指南
+                        - generic [ref=f1e150]:
+                          - generic [ref=f1e151]: Body
+                          - generic [ref=f1e152]: "{{ e08b9346-5cb6-40c5-a1b8-7b39c9b54714.extraction }}"
+            - generic "Control Panel" [ref=f1e154]:
+              - button "Zoom In" [ref=f1e155] [cursor=pointer]
+              - button "Zoom Out" [ref=f1e158] [cursor=pointer]
+              - button "Fit View" [ref=f1e161] [cursor=pointer]
+              - button "Toggle Interactivity" [ref=f1e164] [cursor=pointer]
+            - img "gloria wan" [ref=f1e171]
+            - link "React Flow attribution" [ref=f1e173] [cursor=pointer]:
+              - /url: https://reactflow.dev/attribution
+              - text: React Flow
+          - separator [ref=f1e175]
+          - generic [ref=f1e181]:
+            - generic [ref=f1e182]:
+              - generic [ref=f1e183]:
+                - generic [ref=f1e184]: 20:16:43
+                - generic [ref=f1e185]: FAILED
+              - button "Start" [ref=f1e186] [cursor=pointer]
+              - button "Open URL 1 11.7s" [ref=f1e195] [cursor=pointer]:
+                - generic [ref=f1e200]: Open URL 1
+                - generic [ref=f1e201]: 11.7s
+              - button "Act 1 31.7s" [ref=f1e202] [cursor=pointer]:
+                - generic [ref=f1e210]: Act 1
+                - generic [ref=f1e211]: 31.7s
+              - button "Extract 1 9s" [ref=f1e212] [cursor=pointer]:
+                - generic [ref=f1e219]: Extract 1
+                - generic [ref=f1e220]: 9s
+              - button "Send Email 1 1s" [ref=f1e221] [cursor=pointer]:
+                - generic [ref=f1e226]: Send Email 1
+                - generic [ref=f1e227]: 1s
+            - generic [ref=f1e228]:
+              - generic [ref=f1e229]:
+                - generic [ref=f1e230]: 20:13:17
+                - generic [ref=f1e231]: COMPLETED
+              - button "Start" [ref=f1e232] [cursor=pointer]
+              - button "Open URL 1 4.9s" [ref=f1e241] [cursor=pointer]:
+                - generic [ref=f1e246]: Open URL 1
+                - generic [ref=f1e247]: 4.9s
+              - button "Act 1 10.5s" [ref=f1e248] [cursor=pointer]:
+                - generic [ref=f1e256]: Act 1
+                - generic [ref=f1e257]: 10.5s
+              - button "Extract 1 3.8s" [ref=f1e258] [cursor=pointer]:
+                - generic [ref=f1e265]: Extract 1
+                - generic [ref=f1e266]: 3.8s
+              - button "Send Email 1 1s" [ref=f1e267] [cursor=pointer]:
+                - generic [ref=f1e272]: Send Email 1
+                - generic [ref=f1e273]: 1s
+              - button "Replay" [ref=f1e274] [cursor=pointer]
+            - generic [ref=f1e280]:
+              - generic [ref=f1e281]:
+                - generic [ref=f1e282]: 20:02:23
+                - generic [ref=f1e283]: FAILED
+              - button "Start" [ref=f1e284] [cursor=pointer]
+              - button "Open URL 1 12.3s" [ref=f1e293] [cursor=pointer]:
+                - generic [ref=f1e298]: Open URL 1
+                - generic [ref=f1e299]: 12.3s
+              - button "Act 1 12.5s" [ref=f1e300] [cursor=pointer]:
+                - generic [ref=f1e308]: Act 1
+                - generic [ref=f1e309]: 12.5s
+              - button "Extract 1 4.7s" [ref=f1e310] [cursor=pointer]:
+                - generic [ref=f1e317]: Extract 1
+                - generic [ref=f1e318]: 4.7s
+              - button "Send Email 1 1.1s" [ref=f1e319] [cursor=pointer]:
+                - generic [ref=f1e324]: Send Email 1
+                - generic [ref=f1e325]: 1.1s
+            - generic [ref=f1e326]:
+              - generic [ref=f1e327]:
+                - generic [ref=f1e328]: 19:52:01
+                - generic [ref=f1e329]: COMPLETED
+              - button "Start" [ref=f1e330] [cursor=pointer]
+              - button "Open URL 1 25.3s" [ref=f1e339] [cursor=pointer]:
+                - generic [ref=f1e344]: Open URL 1
+                - generic [ref=f1e345]: 25.3s
+              - button "Act 1 13.8s" [ref=f1e346] [cursor=pointer]:
+                - generic [ref=f1e354]: Act 1
+                - generic [ref=f1e355]: 13.8s
+              - button "Extract 1 6.2s" [ref=f1e356] [cursor=pointer]:
+                - generic [ref=f1e363]: Extract 1
+                - generic [ref=f1e364]: 6.2s
+              - button "Send Email 1 1.6s" [ref=f1e365] [cursor=pointer]:
+                - generic [ref=f1e370]: Send Email 1
+                - generic [ref=f1e371]: 1.6s
+              - button "Replay" [ref=f1e372] [cursor=pointer]
+            - generic [ref=f1e378]:
+              - generic [ref=f1e379]:
+                - generic [ref=f1e380]: 19:40:40
+                - generic [ref=f1e381]: COMPLETED
+              - button "Start" [ref=f1e382] [cursor=pointer]
+              - button "Open URL 1 5.1s" [ref=f1e391] [cursor=pointer]:
+                - generic [ref=f1e396]: Open URL 1
+                - generic [ref=f1e397]: 5.1s
+              - button "Act 1 11s" [ref=f1e398] [cursor=pointer]:
+                - generic [ref=f1e406]: Act 1
+                - generic [ref=f1e407]: 11s
+              - button "Extract 1 3.3s" [ref=f1e408] [cursor=pointer]:
+                - generic [ref=f1e415]: Extract 1
+                - generic [ref=f1e416]: 3.3s
+              - button "Send Email 1 743ms" [ref=f1e417] [cursor=pointer]:
+                - generic [ref=f1e422]: Send Email 1
+                - generic [ref=f1e423]: 743ms
+              - button "Replay" [ref=f1e424] [cursor=pointer]
+            - generic [ref=f1e430]:
+              - generic [ref=f1e431]:
+                - generic [ref=f1e432]: 19:40:36
+                - generic [ref=f1e433]: COMPLETED
+              - button "Start" [ref=f1e434] [cursor=pointer]
+              - button "Open URL 1 4.7s" [ref=f1e443] [cursor=pointer]:
+                - generic [ref=f1e448]: Open URL 1
+                - generic [ref=f1e449]: 4.7s
+              - button "Act 1 10.1s" [ref=f1e450] [cursor=pointer]:
+                - generic [ref=f1e458]: Act 1
+                - generic [ref=f1e459]: 10.1s
+              - button "Extract 1 3.9s" [ref=f1e460] [cursor=pointer]:
+                - generic [ref=f1e467]: Extract 1
+                - generic [ref=f1e468]: 3.9s
+              - button "Send Email 1 706ms" [ref=f1e469] [cursor=pointer]:
+                - generic [ref=f1e474]: Send Email 1
+                - generic [ref=f1e475]: 706ms
+              - button "Replay" [ref=f1e476] [cursor=pointer]
+            - generic [ref=f1e482]:
+              - generic [ref=f1e483]:
+                - generic [ref=f1e484]: 19:31:53
+                - generic [ref=f1e485]: COMPLETED
+              - button "Start" [ref=f1e486] [cursor=pointer]
+              - button "Open URL 1 10.5s" [ref=f1e495] [cursor=pointer]:
+                - generic [ref=f1e500]: Open URL 1
+                - generic [ref=f1e501]: 10.5s
+              - button "Act 1 12.6s" [ref=f1e502] [cursor=pointer]:
+                - generic [ref=f1e510]: Act 1
+                - generic [ref=f1e511]: 12.6s
+              - button "Extract 1 4.8s" [ref=f1e512] [cursor=pointer]:
+                - generic [ref=f1e519]: Extract 1
+                - generic [ref=f1e520]: 4.8s
+              - button "Send Email 1 713ms" [ref=f1e521] [cursor=pointer]:
+                - generic [ref=f1e526]: Send Email 1
+                - generic [ref=f1e527]: 713ms
+              - button "Replay" [ref=f1e528] [cursor=pointer]
+            - generic [ref=f1e534]:
+              - generic [ref=f1e535]:
+                - generic [ref=f1e536]: 19:24:17
+                - generic [ref=f1e537]: FAILED
+              - button "Start" [ref=f1e538] [cursor=pointer]
+              - button "Open URL 1 13.8s" [ref=f1e547] [cursor=pointer]:
+                - generic [ref=f1e552]: Open URL 1
+                - generic [ref=f1e553]: 13.8s
+              - button "Act 1 12.5s" [ref=f1e554] [cursor=pointer]:
+                - generic [ref=f1e562]: Act 1
+                - generic [ref=f1e563]: 12.5s
+              - button "Extract 1" [ref=f1e564] [cursor=pointer]
+              - button "Send Email 1" [ref=f1e572] [cursor=pointer]
+            - generic [ref=f1e578]:
+              - generic [ref=f1e579]:
+                - generic [ref=f1e580]: 19:22:14
+                - generic [ref=f1e581]: CANCELED
+              - button "Start" [ref=f1e582] [cursor=pointer]
+              - button "Open URL 1 35.5s" [ref=f1e591] [cursor=pointer]:
+                - generic [ref=f1e596]: Open URL 1
+                - generic [ref=f1e597]: 35.5s
+              - button "Act 1" [ref=f1e598] [cursor=pointer]
+              - button "Extract 1" [ref=f1e607] [cursor=pointer]
+              - button "Send Email 1" [ref=f1e615] [cursor=pointer]
+            - generic [ref=f1e621]:
+              - generic [ref=f1e622]:
+                - generic [ref=f1e623]: 19:19:51
+                - generic [ref=f1e624]: FAILED
+              - button "Start" [ref=f1e625] [cursor=pointer]
+              - button "Open URL 1 3ms" [ref=f1e634] [cursor=pointer]:
+                - generic [ref=f1e639]: Open URL 1
+                - generic [ref=f1e640]: 3ms
+              - button "Act 1" [ref=f1e641] [cursor=pointer]
+              - button "Extract 1" [ref=f1e650] [cursor=pointer]
+              - button "Send Email 1" [ref=f1e658] [cursor=pointer]
+            - generic [ref=f1e664]:
+              - generic [ref=f1e665]:
+                - generic [ref=f1e666]: 19:12:43
+                - generic [ref=f1e667]: FAILED
+              - button "Start" [ref=f1e668] [cursor=pointer]
+              - button "Open URL 1 2ms" [ref=f1e677] [cursor=pointer]:
+                - generic [ref=f1e682]: Open URL 1
+                - generic [ref=f1e683]: 2ms
+              - button "Act 1" [ref=f1e684] [cursor=pointer]
+              - button "Extract 1" [ref=f1e693] [cursor=pointer]
+              - button "Send Email 1" [ref=f1e701] [cursor=pointer]
+            - generic [ref=f1e708]:
+              - generic [ref=f1e709]: 19:10:23
+              - generic [ref=f1e710]: CANCELED
+        - separator [ref=f1e711]
+        - generic [ref=f1e716]:
+          - generic [ref=f1e717]:
+            - button [ref=f1e718] [cursor=pointer]
+            - button "Run" [ref=f1e719] [cursor=pointer]
+          - tablist [ref=f1e720]:
+            - tab "Toolbar" [selected] [ref=f1e721] [cursor=pointer]
+            - tab "Editor" [ref=f1e722] [cursor=pointer]
+          - tabpanel "Toolbar" [ref=f1e723]:
+            - generic [ref=f1e724]:
+              - generic [ref=f1e725]: Toolbar
+              - generic [ref=f1e727]:
+                - generic [ref=f1e728]:
+                  - heading [level=3] [ref=f1e729]:
+                    - button "Triggers" [expanded] [ref=f1e730] [cursor=pointer]
+                  - region "Triggers" [ref=f1e731]:
+                    - button [ref=f1e733] [cursor=pointer]
+                - generic [ref=f1e735]:
+                  - heading [level=3] [ref=f1e736]:
+                    - button "Actions" [expanded] [ref=f1e737] [cursor=pointer]
+                  - region "Actions" [ref=f1e738]:
+                    - generic [ref=f1e739]:
+                      - button [ref=f1e740] [cursor=pointer]
+                      - button [ref=f1e742] [cursor=pointer]
+                      - button [ref=f1e744] [cursor=pointer]
+                      - button [ref=f1e746] [cursor=pointer]
+                      - button [ref=f1e748] [cursor=pointer]
+                      - button [ref=f1e750] [cursor=pointer]
+  - region "Notifications alt+T"
+  - alert [ref=f1e45]
+  - generic [ref=f1e752]:
+    - link "Liveblocks" [ref=f1e753] [cursor=pointer]:
+      - /url: https://lblcks.io/badge
+    - button [ref=f1e762] [cursor=pointer]

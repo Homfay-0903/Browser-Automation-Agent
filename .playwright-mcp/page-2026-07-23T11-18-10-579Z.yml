@@ -1,0 +1,101 @@
+- generic [active]:
+  - generic [ref=f31e2]:
+    - navigation [ref=f31e3]:
+      - complementary [ref=f31e4]:
+        - button "gloriawan669" [ref=f31e6] [cursor=pointer]
+        - navigation [ref=f31e15]:
+          - list [ref=f31e16]:
+            - listitem [ref=f31e17]:
+              - link "Emails" [ref=f31e18] [cursor=pointer]:
+                - /url: /emails
+            - listitem [ref=f31e20]:
+              - link "Broadcasts" [ref=f31e21] [cursor=pointer]:
+                - /url: /broadcasts
+            - listitem [ref=f31e23]:
+              - link "Automations" [ref=f31e24] [cursor=pointer]:
+                - /url: /automations
+            - listitem [ref=f31e26]:
+              - link "Templates" [ref=f31e27] [cursor=pointer]:
+                - /url: /templates
+            - listitem [ref=f31e29]:
+              - link "Audience" [ref=f31e30] [cursor=pointer]:
+                - /url: /audience
+            - listitem [ref=f31e32]:
+              - link "Metrics" [ref=f31e33] [cursor=pointer]:
+                - /url: /metrics
+            - listitem [ref=f31e35]:
+              - link "Domains" [ref=f31e36] [cursor=pointer]:
+                - /url: /domains
+            - listitem [ref=f31e38]:
+              - link "Logs" [ref=f31e39] [cursor=pointer]:
+                - /url: /logs
+            - listitem [ref=f31e41]:
+              - link "API keys" [ref=f31e42] [cursor=pointer]:
+                - /url: /api-keys
+            - listitem [ref=f31e44]:
+              - link "Webhooks" [ref=f31e45] [cursor=pointer]:
+                - /url: /webhooks
+            - listitem [ref=f31e47]:
+              - link "Settings" [ref=f31e48] [cursor=pointer]:
+                - /url: /settings
+        - button "gloriawan669@gmail.com" [ref=f31e50] [cursor=pointer]
+    - generic [ref=f31e58]:
+      - generic [ref=f31e59]:
+        - link "Docs" [ref=f31e61] [cursor=pointer]:
+          - /url: https://resend.com/docs/dashboard/api-keys/introduction
+        - button "Need help? H" [ref=f31e62] [cursor=pointer]:
+          - generic [ref=f31e63]: Need help?
+          - generic [ref=f31e65]: H
+      - generic [ref=f31e68]:
+        - generic [ref=f31e69]:
+          - heading "API keys" [level=1] [ref=f31e70]
+          - generic [ref=f31e71]:
+            - button "Create API key" [ref=f31e72] [cursor=pointer]
+            - button "Open API drawer" [ref=f31e77] [cursor=pointer]
+        - generic [ref=f31e81]:
+          - generic [ref=f31e82]:
+            - generic [ref=f31e83]:
+              - textbox "Search..." [ref=f31e85]
+              - combobox [ref=f31e86] [cursor=pointer]:
+                - generic [ref=f31e87]: All permissions
+              - textbox [ref=f31e90]: all
+            - button [ref=f31e91] [cursor=pointer]
+          - generic [ref=f31e95]:
+            - table [ref=f31e98]:
+              - rowgroup [ref=f31e99]:
+                - row [ref=f31e100]:
+                  - columnheader [ref=f31e101]:
+                    - generic [ref=f31e102]:
+                      - generic [ref=f31e103]:
+                        - checkbox [ref=f31e104]
+                        - checkbox [ref=f31e105]
+                      - text: Name
+                  - columnheader "Token" [ref=f31e106]
+                  - columnheader "Permission" [ref=f31e107]
+                  - columnheader "Last used" [ref=f31e108]
+                  - columnheader "Created" [ref=f31e109]
+                  - columnheader [ref=f31e110]
+              - rowgroup [ref=f31e111]:
+                - row [ref=f31e112]:
+                  - cell [ref=f31e113]:
+                    - generic [ref=f31e114]:
+                      - generic [ref=f31e115]:
+                        - checkbox [ref=f31e116]
+                        - checkbox [ref=f31e117]
+                      - link [ref=f31e118] [cursor=pointer]:
+                        - /url: /api-keys/6ad9b092-b76c-4830-8871-24c6a47e2574
+                      - link "Browser-Automation-Agent" [ref=f31e154] [cursor=pointer]:
+                        - /url: /api-keys/6ad9b092-b76c-4830-8871-24c6a47e2574
+                  - cell "re_3tXj8as3..." [ref=f31e155]
+                  - cell "Full access" [ref=f31e157]
+                  - cell "No activity" [ref=f31e158]
+                  - cell [ref=f31e159]:
+                    - time [ref=f31e160]: 4h ago
+                  - cell [ref=f31e161]:
+                    - button "More actions" [ref=f31e162] [cursor=pointer]
+            - generic [ref=f31e167]:
+              - text: Page 1 – 1 of 1 keys –
+              - combobox "Items per page" [ref=f31e168] [cursor=pointer]:
+                - generic [ref=f31e169]: 40 items
+              - textbox [ref=f31e172]: "40"
+  - region "Notifications alt+T"

@@ -1,0 +1,78 @@
+- generic [active]:
+  - generic [ref=f41e2]:
+    - navigation [ref=f41e3]:
+      - complementary [ref=f41e4]:
+        - button "g gloriawan669" [ref=f41e6] [cursor=pointer]:
+          - generic [ref=f41e8]:
+            - generic [ref=f41e9]: g
+            - generic [ref=f41e25]: gloriawan669
+        - navigation [ref=f41e30]:
+          - list [ref=f41e31]:
+            - listitem [ref=f41e32]:
+              - link [ref=f41e33] [cursor=pointer]:
+                - /url: /emails
+            - listitem [ref=f41e41]:
+              - link [ref=f41e42] [cursor=pointer]:
+                - /url: /broadcasts
+            - listitem [ref=f41e56]:
+              - link [ref=f41e57] [cursor=pointer]:
+                - /url: /automations
+            - listitem [ref=f41e65]:
+              - link [ref=f41e66] [cursor=pointer]:
+                - /url: /templates
+            - listitem [ref=f41e80]:
+              - link [ref=f41e81] [cursor=pointer]:
+                - /url: /audience
+            - listitem [ref=f41e98]:
+              - link [ref=f41e99] [cursor=pointer]:
+                - /url: /metrics
+            - listitem [ref=f41e113]:
+              - link [ref=f41e114] [cursor=pointer]:
+                - /url: /domains
+            - listitem [ref=f41e198]:
+              - link [ref=f41e199] [cursor=pointer]:
+                - /url: /logs
+            - listitem [ref=f41e219]:
+              - link [ref=f41e220] [cursor=pointer]:
+                - /url: /api-keys
+            - listitem [ref=f41e238]:
+              - link [ref=f41e239] [cursor=pointer]:
+                - /url: /webhooks
+            - listitem [ref=f41e256]:
+              - link [ref=f41e257] [cursor=pointer]:
+                - /url: /settings
+        - button "g gloriawan669@gmail.com" [ref=f41e267] [cursor=pointer]:
+          - generic [ref=f41e269]:
+            - generic [ref=f41e270]: g
+            - generic [ref=f41e272]: gloriawan669@gmail.com
+    - generic [ref=f41e276]:
+      - generic [ref=f41e277]:
+        - link "Docs" [ref=f41e279] [cursor=pointer]:
+          - /url: https://resend.com/docs/dashboard/emails/introduction
+        - button "Need help? H" [ref=f41e280] [cursor=pointer]:
+          - generic [ref=f41e281]: Need help?
+          - generic [ref=f41e283]: H
+      - generic [ref=f41e286]:
+        - heading "Emails" [level=1] [ref=f41e288]
+        - generic [ref=f41e289]:
+          - generic [ref=f41e290]:
+            - tablist [ref=f41e292]:
+              - tab "Sending" [selected] [ref=f41e293] [cursor=pointer]
+              - tab "Receiving" [ref=f41e294] [cursor=pointer]
+            - button "Open API drawer" [ref=f41e296] [cursor=pointer]
+          - generic [ref=f41e300]:
+            - textbox "Search..." [ref=f41e303]
+            - generic [ref=f41e304]:
+              - button "Last 15 days" [ref=f41e305] [cursor=pointer]
+              - button "All Statuses" [ref=f41e310] [cursor=pointer]
+              - combobox [ref=f41e315] [cursor=pointer]:
+                - generic [ref=f41e316]: All API keys
+              - textbox [ref=f41e319]: all
+            - button [ref=f41e320] [cursor=pointer]
+          - generic [ref=f41e325]:
+            - heading "No sent emails yet" [level=2] [ref=f41e328]
+            - generic [ref=f41e329]: Start sending emails to see insights and previews for every message.
+            - link "Go to docs" [ref=f41e331] [cursor=pointer]:
+              - /url: https://resend.com/docs/introduction
+  - region "Notifications alt+T"
+  - alert [ref=f41e336]

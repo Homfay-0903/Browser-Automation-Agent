@@ -1,0 +1,77 @@
+- generic [ref=f7e1]:
+  - generic [ref=f7e2]:
+    - generic [ref=f7e5]:
+      - generic [ref=f7e6]:
+        - button "Open organization switcher" [ref=f7e8] [cursor=pointer]:
+          - generic [ref=f7e9]:
+            - img "Homfay's Organization's logo" [ref=f7e12]
+            - generic "Homfay's Organization" [ref=f7e15]
+        - button "Toggle Sidebar" [ref=f7e18] [cursor=pointer]
+      - generic [ref=f7e21]:
+        - generic [ref=f7e22]: Workflows
+        - button "New workflow" [ref=f7e23] [cursor=pointer]
+        - list [ref=f7e27]:
+          - listitem [ref=f7e28]:
+            - link "liquid-porcupine" [ref=f7e29] [cursor=pointer]:
+              - /url: /workflows/9333c2c8-704f-4cdd-b3f0-6c587db3d63f
+      - button "Open user menu" [ref=f7e33] [cursor=pointer]:
+        - img "gloria wan's logo" [ref=f7e36]
+    - main [ref=f7e38]:
+      - generic [ref=f7e50]:
+        - generic [ref=f7e53]:
+          - application [ref=f7e57]:
+            - generic [ref=f7e59]:
+              - generic:
+                - generic:
+                  - group [ref=f7e60]:
+                    - generic [ref=f7e61]: Start
+                  - group [ref=f7e72]:
+                    - generic [ref=f7e73]: Open URL 1
+            - generic "Control Panel" [ref=f7e82]:
+              - button "Zoom In" [disabled]
+              - button "Zoom Out" [ref=f7e83] [cursor=pointer]
+              - button "Fit View" [ref=f7e86] [cursor=pointer]
+              - button "Toggle Interactivity" [ref=f7e89] [cursor=pointer]
+            - img "gloria wan" [ref=f7e96]
+            - link "React Flow attribution" [ref=f7e98] [cursor=pointer]:
+              - /url: https://reactflow.dev/attribution
+              - text: React Flow
+          - separator [ref=f7e100]
+          - generic [ref=f7e101]: No runs yet
+        - separator [ref=f7e107]
+        - generic [ref=f7e112]:
+          - generic [ref=f7e113]:
+            - button [ref=f7e114] [cursor=pointer]
+            - button "Run" [active] [ref=f7e115] [cursor=pointer]
+          - tablist [ref=f7e116]:
+            - tab "Toolbar" [selected] [ref=f7e117] [cursor=pointer]
+            - tab "Editor" [ref=f7e118] [cursor=pointer]
+          - tabpanel "Toolbar" [ref=f7e119]:
+            - generic [ref=f7e120]:
+              - generic [ref=f7e121]: Toolbar
+              - generic [ref=f7e123]:
+                - generic [ref=f7e124]:
+                  - heading [level=3] [ref=f7e125]:
+                    - button "Triggers" [expanded] [ref=f7e126] [cursor=pointer]
+                  - region "Triggers" [ref=f7e127]:
+                    - button [ref=f7e129] [cursor=pointer]
+                - generic [ref=f7e131]:
+                  - heading [level=3] [ref=f7e132]:
+                    - button "Actions" [expanded] [ref=f7e133] [cursor=pointer]
+                  - region "Actions" [ref=f7e134]:
+                    - generic [ref=f7e135]:
+                      - button [ref=f7e136] [cursor=pointer]
+                      - button [ref=f7e138] [cursor=pointer]
+                      - button [ref=f7e140] [cursor=pointer]
+                      - button [ref=f7e142] [cursor=pointer]
+                      - button [ref=f7e144] [cursor=pointer]
+                      - button [ref=f7e146] [cursor=pointer]
+  - region "Notifications alt+T":
+    - list:
+      - listitem [ref=f7e161]:
+        - generic [ref=f7e167]: Connect your nodes before running.
+  - alert [ref=f7e46]
+  - generic [ref=f7e148]:
+    - link "Liveblocks" [ref=f7e149] [cursor=pointer]:
+      - /url: https://lblcks.io/badge
+    - button [ref=f7e158] [cursor=pointer]

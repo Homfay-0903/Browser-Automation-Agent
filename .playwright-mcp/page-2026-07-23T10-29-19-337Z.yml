@@ -1,0 +1,87 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - button:
+              - generic: Toggle Sidebar
+          - generic:
+            - generic:
+              - generic:
+                - list:
+                  - listitem:
+                    - button
+          - generic:
+            - generic:
+              - button
+    - main:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - application:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - group [ref=f8e211]:
+                                - generic [ref=f8e212]: Start
+                              - group [ref=f8e223]:
+                                - generic [ref=f8e224]: Open URL 1
+                      - generic:
+                        - button [disabled]
+                        - button
+                        - button
+                        - button
+                      - generic:
+                        - link:
+                          - /url: https://reactflow.dev/attribution
+                          - text: React Flow
+              - separator
+              - generic: No runs yet
+        - separator
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - button [expanded]
+                    - button: Run
+                  - tablist:
+                    - tab [selected]: Toolbar
+                    - tab: Editor
+                  - tabpanel:
+                    - generic:
+                      - generic: Toolbar
+                      - generic:
+                        - generic:
+                          - generic:
+                            - heading [level=3]:
+                              - button [expanded]: Triggers
+                            - region:
+                              - generic:
+                                - button: Start
+                          - generic:
+                            - heading [level=3]:
+                              - button [expanded]: Actions
+                            - region:
+                              - generic:
+                                - button: Open URL
+                                - button: Act
+                                - button: Extract
+                                - button: Observe
+                                - button: Agent
+                                - button: Send Email
+  - region "Notifications alt+T"
+  - alert
+  - generic:
+    - link:
+      - /url: https://lblcks.io/badge
+    - button
+  - menu [active] [ref=f8e411]:
+    - menuitem "Delete workflow" [ref=f8e412]

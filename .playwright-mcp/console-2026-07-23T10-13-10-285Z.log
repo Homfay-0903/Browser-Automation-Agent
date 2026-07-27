@@ -1,0 +1,5 @@
+[    5189ms] [LOG] [Client Instrumentation Hook] Slow execution detected: 21ms (Note: Code download overhead is not included in this measurement) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:703
+[    5222ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[    5339ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[    6616ms] [WARNING] Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_038ce8_._.js:1074
+[    8394ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/sign-in?redirect_url=http%3A%2F%2Flocalhost%3A3000%2F:0

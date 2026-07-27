@@ -1,0 +1,277 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - button "Open organization switcher" [ref=e34] [cursor=pointer]:
+          - generic [ref=e35]:
+            - img "Homfay's Organization's logo" [ref=e38]
+            - generic "Homfay's Organization" [ref=e41]
+        - button "Toggle Sidebar" [ref=e7] [cursor=pointer]
+      - generic [ref=e10]:
+        - generic [ref=e11]: Workflows
+        - button "New workflow" [ref=e12] [cursor=pointer]
+        - list [ref=e16]:
+          - listitem [ref=e17]:
+            - link "classic-camel" [ref=e18] [cursor=pointer]:
+              - /url: /workflows/9b1ae778-b4b8-45c0-97a2-001dc7817f78
+          - listitem [ref=e20]:
+            - link "liquid-porcupine" [ref=e21] [cursor=pointer]:
+              - /url: /workflows/9333c2c8-704f-4cdd-b3f0-6c587db3d63f
+      - button "Open user menu" [ref=e45] [cursor=pointer]:
+        - img "gloria wan's logo" [ref=e48]
+    - main [ref=e24]:
+      - generic [ref=e167]:
+        - generic [ref=e170]:
+          - application [ref=e174]:
+            - generic [ref=e176]:
+              - generic:
+                - generic:
+                  - img:
+                    - group "Edge from start to 39c5d2f8-028d-4066-9fb3-aac65fd353fa" [ref=e177] [cursor=pointer]
+                  - img:
+                    - group "Edge from 39c5d2f8-028d-4066-9fb3-aac65fd353fa to 5834f6ed-2807-430e-8e6e-4f745cc2de1b"
+                  - img:
+                    - group "Edge from 5834f6ed-2807-430e-8e6e-4f745cc2de1b to e08b9346-5cb6-40c5-a1b8-7b39c9b54714" [ref=e180] [cursor=pointer]
+                  - img:
+                    - group "Edge from e08b9346-5cb6-40c5-a1b8-7b39c9b54714 to 5d269f2b-dd65-40d0-b6bf-48ae0e5fd5a9" [ref=e183] [cursor=pointer]
+                - generic:
+                  - group [ref=e186]:
+                    - generic [ref=e187]: Start
+                  - group [ref=e198]:
+                    - generic [ref=e199]:
+                      - generic [ref=e201]: Open URL 1
+                      - generic [ref=e209]:
+                        - generic [ref=e210]: URL
+                        - generic [ref=e211]: https://www.google.com.hk/?hl=zh_CN
+                  - group [active] [ref=e213]:
+                    - generic [ref=e214]:
+                      - generic [ref=e216]: Act 1
+                      - generic [ref=e227]:
+                        - generic [ref=e228]: Instruction
+                        - generic [ref=e229]: 在搜索框中输入"番茄炒蛋的家常做法"，然后点击"Google搜索"搜索按钮
+                  - group [ref=e231]:
+                    - generic [ref=e232]:
+                      - generic [ref=e234]: Extract 1
+                      - generic [ref=e244]:
+                        - generic [ref=e245]: Instruction
+                        - generic [ref=e246]: 从搜索结果页面中，提取番茄炒蛋的完整制作步骤、所需食材清单和烹饪要点。如果搜索结果有多条，挑选最完整的一条菜谱提取。
+                  - group [ref=e248]:
+                    - generic [ref=e249]:
+                      - generic [ref=e251]: Send Email 1
+                      - generic [ref=e258]:
+                        - generic [ref=e259]:
+                          - generic [ref=e260]: To
+                          - generic [ref=e261]: gloriawan669@gmail.com
+                        - generic [ref=e262]:
+                          - generic [ref=e263]: Subject
+                          - generic [ref=e264]: 番茄炒蛋制作指南
+                        - generic [ref=e265]:
+                          - generic [ref=e266]: Body
+                          - generic [ref=e267]: "{{ e08b9346-5cb6-40c5-a1b8-7b39c9b54714.extraction }}"
+            - generic "Control Panel" [ref=e269]:
+              - button "Zoom In" [ref=e270] [cursor=pointer]
+              - button "Zoom Out" [ref=e273] [cursor=pointer]
+              - button "Fit View" [ref=e276] [cursor=pointer]
+              - button "Toggle Interactivity" [ref=e279] [cursor=pointer]
+            - img "gloria wan" [ref=e286]
+            - link "React Flow attribution" [ref=e288] [cursor=pointer]:
+              - /url: https://reactflow.dev/attribution
+              - text: React Flow
+          - separator [ref=e290]
+          - generic [ref=e293]:
+            - generic [ref=e296]:
+              - generic [ref=e783]:
+                - generic [ref=e784]:
+                  - generic [ref=e785]: 20:13:17
+                  - generic [ref=e786]: COMPLETED
+                - button "Start" [ref=e805] [cursor=pointer]
+                - button "Open URL 1 4.9s" [ref=e814] [cursor=pointer]:
+                  - generic [ref=e819]: Open URL 1
+                  - generic [ref=e820]: 4.9s
+                - button "Act 1 10.5s" [ref=e821] [cursor=pointer]:
+                  - generic [ref=e829]: Act 1
+                  - generic [ref=e830]: 10.5s
+                - button "Extract 1 3.8s" [ref=e831] [cursor=pointer]:
+                  - generic [ref=e838]: Extract 1
+                  - generic [ref=e839]: 3.8s
+                - button "Send Email 1 1s" [ref=e840] [cursor=pointer]:
+                  - generic [ref=e845]: Send Email 1
+                  - generic [ref=e846]: 1s
+                - button "Replay" [ref=e847] [cursor=pointer]
+              - generic [ref=e297]:
+                - generic [ref=e298]:
+                  - generic [ref=e299]: 20:02:23
+                  - generic [ref=e300]: FAILED
+                - button "Start" [ref=e301] [cursor=pointer]
+                - button "Open URL 1 12.3s" [ref=e310] [cursor=pointer]:
+                  - generic [ref=e315]: Open URL 1
+                  - generic [ref=e316]: 12.3s
+                - button "Act 1 12.5s" [ref=e317] [cursor=pointer]:
+                  - generic [ref=e325]: Act 1
+                  - generic [ref=e326]: 12.5s
+                - button "Extract 1 4.7s" [ref=e327] [cursor=pointer]:
+                  - generic [ref=e334]: Extract 1
+                  - generic [ref=e335]: 4.7s
+                - button "Send Email 1 1.1s" [ref=e336] [cursor=pointer]:
+                  - generic [ref=e341]: Send Email 1
+                  - generic [ref=e342]: 1.1s
+              - generic [ref=e343]:
+                - generic [ref=e344]:
+                  - generic [ref=e345]: 19:52:01
+                  - generic [ref=e346]: COMPLETED
+                - button "Start" [ref=e347] [cursor=pointer]
+                - button "Open URL 1 25.3s" [ref=e356] [cursor=pointer]:
+                  - generic [ref=e361]: Open URL 1
+                  - generic [ref=e362]: 25.3s
+                - button "Act 1 13.8s" [ref=e363] [cursor=pointer]:
+                  - generic [ref=e371]: Act 1
+                  - generic [ref=e372]: 13.8s
+                - button "Extract 1 6.2s" [ref=e373] [cursor=pointer]:
+                  - generic [ref=e380]: Extract 1
+                  - generic [ref=e381]: 6.2s
+                - button "Send Email 1 1.6s" [ref=e382] [cursor=pointer]:
+                  - generic [ref=e387]: Send Email 1
+                  - generic [ref=e388]: 1.6s
+                - button "Replay" [ref=e389] [cursor=pointer]
+              - generic [ref=e395]:
+                - generic [ref=e396]:
+                  - generic [ref=e397]: 19:40:40
+                  - generic [ref=e398]: COMPLETED
+                - button "Start" [ref=e399] [cursor=pointer]
+                - button "Open URL 1 5.1s" [ref=e408] [cursor=pointer]:
+                  - generic [ref=e413]: Open URL 1
+                  - generic [ref=e414]: 5.1s
+                - button "Act 1 11s" [ref=e415] [cursor=pointer]:
+                  - generic [ref=e423]: Act 1
+                  - generic [ref=e424]: 11s
+                - button "Extract 1 3.3s" [ref=e425] [cursor=pointer]:
+                  - generic [ref=e432]: Extract 1
+                  - generic [ref=e433]: 3.3s
+                - button "Send Email 1 743ms" [ref=e434] [cursor=pointer]:
+                  - generic [ref=e439]: Send Email 1
+                  - generic [ref=e440]: 743ms
+                - button "Replay" [ref=e441] [cursor=pointer]
+              - generic [ref=e447]:
+                - generic [ref=e448]:
+                  - generic [ref=e449]: 19:40:36
+                  - generic [ref=e450]: COMPLETED
+                - button "Start" [ref=e451] [cursor=pointer]
+                - button "Open URL 1 4.7s" [ref=e460] [cursor=pointer]:
+                  - generic [ref=e465]: Open URL 1
+                  - generic [ref=e466]: 4.7s
+                - button "Act 1 10.1s" [ref=e467] [cursor=pointer]:
+                  - generic [ref=e475]: Act 1
+                  - generic [ref=e476]: 10.1s
+                - button "Extract 1 3.9s" [ref=e477] [cursor=pointer]:
+                  - generic [ref=e484]: Extract 1
+                  - generic [ref=e485]: 3.9s
+                - button "Send Email 1 706ms" [ref=e486] [cursor=pointer]:
+                  - generic [ref=e491]: Send Email 1
+                  - generic [ref=e492]: 706ms
+                - button "Replay" [ref=e493] [cursor=pointer]
+              - generic [ref=e499]:
+                - generic [ref=e500]:
+                  - generic [ref=e501]: 19:31:53
+                  - generic [ref=e502]: COMPLETED
+                - button "Start" [ref=e503] [cursor=pointer]
+                - button "Open URL 1 10.5s" [ref=e512] [cursor=pointer]:
+                  - generic [ref=e517]: Open URL 1
+                  - generic [ref=e518]: 10.5s
+                - button "Act 1 12.6s" [ref=e519] [cursor=pointer]:
+                  - generic [ref=e527]: Act 1
+                  - generic [ref=e528]: 12.6s
+                - button "Extract 1 4.8s" [ref=e529] [cursor=pointer]:
+                  - generic [ref=e536]: Extract 1
+                  - generic [ref=e537]: 4.8s
+                - button "Send Email 1 713ms" [ref=e538] [cursor=pointer]:
+                  - generic [ref=e543]: Send Email 1
+                  - generic [ref=e544]: 713ms
+                - button "Replay" [ref=e545] [cursor=pointer]
+              - generic [ref=e551]:
+                - generic [ref=e552]:
+                  - generic [ref=e553]: 19:24:17
+                  - generic [ref=e554]: FAILED
+                - button "Start" [ref=e555] [cursor=pointer]
+                - button "Open URL 1 13.8s" [ref=e564] [cursor=pointer]:
+                  - generic [ref=e569]: Open URL 1
+                  - generic [ref=e570]: 13.8s
+                - button "Act 1 12.5s" [ref=e571] [cursor=pointer]:
+                  - generic [ref=e579]: Act 1
+                  - generic [ref=e580]: 12.5s
+                - button "Extract 1" [ref=e581] [cursor=pointer]
+                - button "Send Email 1" [ref=e589] [cursor=pointer]
+              - generic [ref=e595]:
+                - generic [ref=e596]:
+                  - generic [ref=e597]: 19:22:14
+                  - generic [ref=e598]: CANCELED
+                - button "Start" [ref=e599] [cursor=pointer]
+                - button "Open URL 1 35.5s" [ref=e608] [cursor=pointer]:
+                  - generic [ref=e613]: Open URL 1
+                  - generic [ref=e614]: 35.5s
+                - button "Act 1" [ref=e615] [cursor=pointer]
+                - button "Extract 1" [ref=e624] [cursor=pointer]
+                - button "Send Email 1" [ref=e632] [cursor=pointer]
+              - generic [ref=e638]:
+                - generic [ref=e639]:
+                  - generic [ref=e640]: 19:19:51
+                  - generic [ref=e641]: FAILED
+                - button "Start" [ref=e642] [cursor=pointer]
+                - button "Open URL 1 3ms" [ref=e651] [cursor=pointer]:
+                  - generic [ref=e656]: Open URL 1
+                  - generic [ref=e657]: 3ms
+                - button "Act 1" [ref=e658] [cursor=pointer]
+                - button "Extract 1" [ref=e667] [cursor=pointer]
+                - button "Send Email 1" [ref=e675] [cursor=pointer]
+              - generic [ref=e681]:
+                - generic [ref=e682]:
+                  - generic [ref=e683]: 19:12:43
+                  - generic [ref=e684]: FAILED
+                - button "Start" [ref=e685] [cursor=pointer]
+                - button "Open URL 1 2ms" [ref=e694] [cursor=pointer]:
+                  - generic [ref=e699]: Open URL 1
+                  - generic [ref=e700]: 2ms
+                - button "Act 1" [ref=e701] [cursor=pointer]
+                - button "Extract 1" [ref=e710] [cursor=pointer]
+                - button "Send Email 1" [ref=e718] [cursor=pointer]
+              - generic [ref=e725]:
+                - generic [ref=e726]: 19:10:23
+                - generic [ref=e727]: CANCELED
+            - separator [ref=e769]
+            - generic [ref=e773]:
+              - generic [ref=e774]: Extract 1
+              - generic [ref=e782]: "{ \"extraction\": \"null\" }"
+        - separator [ref=e728]
+        - generic [ref=e733]:
+          - generic [ref=e734]:
+            - button [ref=e735] [cursor=pointer]
+            - button "Run" [ref=e853] [cursor=pointer]
+          - tablist [ref=e737]:
+            - tab "Toolbar" [ref=e738] [cursor=pointer]
+            - tab "Editor" [selected] [ref=e739] [cursor=pointer]
+          - tabpanel "Editor" [ref=e854]:
+            - generic [ref=e855]:
+              - generic [ref=e856]: Act 1
+              - generic [ref=e865]:
+                - generic [ref=e866]:
+                  - generic [ref=e867]:
+                    - text: Instruction
+                    - generic [ref=e868]: "*"
+                  - textbox "Instruction *" [ref=e869]:
+                    - /placeholder: Click the sign in button
+                    - text: 在搜索框中输入"番茄炒蛋的家常做法"，然后点击"Google搜索"搜索按钮
+                - generic [ref=e870]:
+                  - generic [ref=e871]: Press Enter after action
+                  - generic [ref=e872] [cursor=pointer]:
+                    - checkbox "Press Enter after action Enable when typing into search boxes or forms" [ref=e873]
+                    - generic [ref=e874]: Enable when typing into search boxes or forms
+                - generic [ref=e875]:
+                  - generic [ref=e876]: Connections
+                  - generic [ref=e877]:
+                    - button "Open URL 1 · URL" [ref=e878] [cursor=pointer]
+                    - button "Open URL 1 · Title" [ref=e884] [cursor=pointer]
+  - region "Notifications alt+T"
+  - alert [ref=e32]
+  - generic [ref=e151]:
+    - link "Liveblocks" [ref=e152] [cursor=pointer]:
+      - /url: https://lblcks.io/badge
+    - button [ref=e161] [cursor=pointer]

@@ -1,0 +1,20 @@
+- generic [active] [ref=f11e1]:
+  - generic [ref=f11e2]:
+    - generic [ref=f11e5]:
+      - button "Toggle Sidebar" [ref=f11e7] [cursor=pointer]
+      - generic [ref=f11e10]:
+        - generic [ref=f11e11]: Workflows
+        - button "New workflow" [ref=f11e12] [cursor=pointer]
+        - list [ref=f11e16]:
+          - listitem [ref=f11e17]:
+            - link "pleasant-manatee" [ref=f11e18] [cursor=pointer]:
+              - /url: /workflows/db418189-f14a-4439-8474-08e2b0a5b7f5
+          - listitem [ref=f11e20]:
+            - link "liquid-porcupine" [ref=f11e21] [cursor=pointer]:
+              - /url: /workflows/9333c2c8-704f-4cdd-b3f0-6c587db3d63f
+    - main [ref=f11e24]:
+      - generic [ref=f11e27]:
+        - heading "Billing" [level=1] [ref=f11e28]
+        - paragraph [ref=f11e29]: Choose a plan for your organization. Upgrades and checkout happen right here.
+  - region "Notifications alt+T"
+  - alert [ref=f11e30]

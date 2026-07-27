@@ -1,0 +1,29 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - button "Open organization switcher" [ref=e34] [cursor=pointer]:
+          - generic [ref=e35]:
+            - img "Homfay's Organization's logo" [ref=e38]
+            - generic "Homfay's Organization" [ref=e41]
+        - button "Toggle Sidebar" [ref=e7] [cursor=pointer]
+      - generic [ref=e10]:
+        - generic [ref=e11]: Workflows
+        - button "New workflow" [ref=e12] [cursor=pointer]
+        - list [ref=e16]:
+          - listitem [ref=e17]:
+            - link "classic-camel" [active] [ref=e18] [cursor=pointer]:
+              - /url: /workflows/9b1ae778-b4b8-45c0-97a2-001dc7817f78
+          - listitem [ref=e20]:
+            - link "liquid-porcupine" [ref=e21] [cursor=pointer]:
+              - /url: /workflows/9333c2c8-704f-4cdd-b3f0-6c587db3d63f
+      - button "Open user menu" [ref=e45] [cursor=pointer]:
+        - img "gloria wan's logo" [ref=e48]
+    - main [ref=e24]:
+      - status "Loading" [ref=e165]
+  - region "Notifications alt+T"
+  - alert [ref=e32]
+  - generic [ref=e151]:
+    - link "Liveblocks" [ref=e152] [cursor=pointer]:
+      - /url: https://lblcks.io/badge
+    - button [ref=e161] [cursor=pointer]
