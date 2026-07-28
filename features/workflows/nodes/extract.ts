@@ -15,21 +15,23 @@ export async function extract({
    *  structured data instead of a flat string. */
   format?: string
 }) {
-  // Build a schema whose extraction field accepts both string and null so the
-  // LLM returning `{"extraction":null}` (actual JSON null) doesn't cause a
-  // Zod validation crash. Stagehand's defaultExtractSchema uses z.string()
-  // which rejects null and throws a fatal error.
+  // Accept string, structured object, array, or null for extraction.
+  // Some LLMs (e.g. DeepSeek) naturally return structured JSON objects even
+  // when asked for a string, causing Zod validation failures. Accepting both
+  // prevents the extraction from being discarded when the LLM returns richer
+  // structured data. The downstream normalisation already handles strings
+  // (including JSON-encoded strings), objects, and null correctly.
   const schema = z.object({
     extraction: z
-      .string()
+      .union([z.string(), z.record(z.string(), z.any()), z.array(z.any())])
       .nullable()
       .describe(
         format ??
-          "The extracted content as a string. Return null if nothing matching the instruction is found on the page.",
+          "The extracted content — can be a plain string, a structured object, or an array. Return null only if nothing matching the instruction is found on the page.",
       ),
   })
 
-  let result: { extraction: string | null } | undefined
+  let result: { extraction: unknown } | undefined
 
   try {
     result = await stagehand.extract(instruction, schema)
