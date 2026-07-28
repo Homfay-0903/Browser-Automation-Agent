@@ -152,6 +152,12 @@ export const nodeRegistry = {
         multiline: true,
         required: true,
       },
+      {
+        key: "maxSteps",
+        label: "Max Steps (optional)",
+        placeholder: "30",
+        required: false,
+      },
     ],
     outputs: [
       { path: "success", label: "Success" },

@@ -76,8 +76,8 @@ export const runWorkflowTask = task({
     publishSteps()
 
     // The run owns one browser session, opened lazily on the first browser step
-    // and reused by every later one. The browser runs on Browserless cloud,
-    // with LLM inference through 智谱(GLM) or DeepSeek.
+    // and reused by every later one. The browser is a local Chromium launched
+    // via Playwright, with LLM inference through DeepSeek or 智谱(GLM).
     let stagehand: Stagehand | undefined
     let stagehandPromise: Promise<Stagehand> | undefined
     // The browser session id for tracking purposes
@@ -108,22 +108,21 @@ export const runWorkflowTask = task({
           }
         }
 
-        // Browserless WebSocket endpoint.
-        // The `--disable-features=WebSocketPermessageDeflate` arg tells Chrome
-        // to skip WebSocket compression (permessage-deflate). Without it, the
-        // CDP transport may emit "Invalid WebSocket frame: RSV1 must be clear"
-        // errors during shutdown — a harmless but noisy compression-negotiation
-        // race between Playwright and Browserless when the connection tears down.
-        const browserlessApiKey = process.env.BROWSERLESS_API_KEY!
-        const cdpUrl = `wss://chrome.browserless.io?token=${browserlessApiKey}`
-
+        // Launch a local Chromium via Playwright (bundled with Stagehand).
+        // No remote CDP URL — env: "LOCAL" without cdpUrl tells Stagehand to
+        // launch its own browser process. This avoids the Browserless CDP
+        // WebSocket compression issues that caused "Invalid WebSocket frame:
+        // RSV1 must be clear" errors.
         stagehand = new Stagehand({
           env: "LOCAL",
           model: modelConfig,
-          // Connect to Browserless cloud browser via CDP
           localBrowserLaunchOptions: {
-            cdpUrl,
-            args: ["--disable-features=WebSocketPermessageDeflate"],
+            headless: true,
+            args: [
+              "--disable-features=WebSocketPermessageDeflate",
+              "--no-sandbox",
+              "--disable-dev-shm-usage",
+            ],
           },
           // Pino's logging backend spawns a thread-stream worker (lib/worker.js)
           // that can't be resolved inside trigger.dev's bundled output. Disable it —
@@ -131,10 +130,8 @@ export const runWorkflowTask = task({
           disablePino: true,
         })
         await stagehand.init()
-        // Browserless doesn't expose a native session ID like Browserbase, so we
-        // generate a unique identifier combining a timestamp and a random suffix.
-        // This is used for run output tracking and potential future replay integration.
-        browserSessionId = `browserless-${Date.now()}-${crypto.randomUUID().slice(0, 8)}`
+        // Generate a session identifier for run output tracking.
+        browserSessionId = `local-${Date.now()}-${crypto.randomUUID().slice(0, 8)}`
         return stagehand
       })()
       return stagehandPromise

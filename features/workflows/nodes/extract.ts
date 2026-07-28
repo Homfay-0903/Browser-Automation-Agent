@@ -19,40 +19,36 @@ export async function extract({
   // LLM returning `{"extraction":null}` (actual JSON null) doesn't cause a
   // Zod validation crash. Stagehand's defaultExtractSchema uses z.string()
   // which rejects null and throws a fatal error.
-  const buildSchema = (description?: string) => {
-    const field = z.string().nullable().describe(
-      description ??
-        "The extracted content as a string. Return null if nothing matching the instruction is found on the page.",
-    )
-    return z.object({ extraction: field })
-  }
+  const schema = z.object({
+    extraction: z
+      .string()
+      .nullable()
+      .describe(
+        format ??
+          "The extracted content as a string. Return null if nothing matching the instruction is found on the page.",
+      ),
+  })
 
   let result: { extraction: string | null } | undefined
 
-  // --- Attempt 1: instruction + optional format schema ---
   try {
-    const schema = format ? buildSchema(format) : buildSchema()
     result = await stagehand.extract(instruction, schema)
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error)
-    logger.log(`Extract attempt 1 failed: ${message}`)
-  }
+    logger.log(`Extract failed (attempt 1): ${message}`)
 
-  // --- Attempt 2: if attempt 1 returned null, retry with a simpler prompt ---
-  if (!result || result.extraction === null || result.extraction === "null") {
+    // Retry once with a boosted instruction that nudges the LLM harder
     try {
-      logger.log(
-        "Extract returned null, retrying with simplified instruction",
+      logger.log("Extract: retrying with boosted instruction")
+      result = await stagehand.extract(
+        `${instruction}\n\nReturn whatever relevant content you can find on the page. Do not return null.`,
+        schema,
       )
-      const simpleSchema = buildSchema(
-        "Extract the requested content as plain text. Return the raw text found on the page, or null if not found.",
-      )
-      // Append a hint so the LLM knows it MUST return text, not null
-      const boostedInstruction = `${instruction}\n\nIf the page is a search results page, look at the search result snippets, knowledge panels, or featured snippets. Return whatever relevant text you can find. Do NOT return null if ANY relevant content exists on the page.`
-      result = await stagehand.extract(boostedInstruction, simpleSchema)
-    } catch (error) {
-      const message = error instanceof Error ? error.message : String(error)
-      logger.log(`Extract attempt 2 failed: ${message}`)
+    } catch (retryError) {
+      const retryMsg =
+        retryError instanceof Error ? retryError.message : String(retryError)
+      logger.log(`Extract failed (attempt 2): ${retryMsg}`)
+      return { extraction: null }
     }
   }
 

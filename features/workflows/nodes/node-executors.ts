@@ -36,7 +36,7 @@ export const nodeExecutors: Partial<Record<NodeType, NodeExecutor>> = {
   observe: async ({ values, getStagehand }) =>
     observe({ stagehand: await getStagehand(), instruction: values.instruction }),
   agent: async ({ values, getStagehand }) =>
-    agent({ stagehand: await getStagehand(), instruction: values.instruction }),
+    agent({ stagehand: await getStagehand(), instruction: values.instruction, maxSteps: values.maxSteps }),
   "send-email": async ({ values }) =>
     sendEmail({ to: values.to, subject: values.subject, body: values.body }),
 } satisfies Record<ActionNodeType, NodeExecutor>
