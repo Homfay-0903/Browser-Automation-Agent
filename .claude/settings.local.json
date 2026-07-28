@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(nvm list *)",
+      "Bash(nvm use *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(npx triggerdev *)",
+      "Bash(npx @trigger.dev/cli dev --help)",
+      "Bash(npx trigger.dev@latest dev --help)",
+      "Bash(npx *)"
+    ]
+  }
+}
