@@ -9,7 +9,7 @@ import { redirect } from "next/navigation"
 import type { runWorkflowTask } from "@/features/workflows/tasks/run-workflow";
 
 import { liveblocks } from "@/lib/liveblocks"
-import { createWorkflow, deleteWorkflow, saveWorkflowGraph } from "@/features/workflows/data"
+import { createWorkflow, deleteWorkflow, renameWorkflow, saveWorkflowGraph } from "@/features/workflows/data"
 import { WorkflowGraph } from "@/lib/db/schema"
 
 export async function createWorkflowAction(name: string) {
@@ -27,6 +27,41 @@ export async function createWorkflowAction(name: string) {
 
   revalidatePath("/workflows", "layout")
   redirect(`/workflows/${workflow.id}`)
+}
+
+export async function renameWorkflowAction({
+  id,
+  name,
+}: {
+  id: string
+  name: string
+}) {
+  const { orgId } = await auth()
+
+  if (!orgId) {
+    throw new Error("No active organization")
+  }
+
+  const trimmed = name.trim()
+  if (!trimmed) {
+    throw new Error("Workflow name cannot be empty")
+  }
+
+  Sentry.getIsolationScope().setAttributes({
+    action: "renameWorkflowAction",
+    orgId,
+    workflowId: id,
+  })
+
+  const workflow = await renameWorkflow(orgId, id, trimmed)
+
+  if (!workflow) {
+    throw new Error("Workflow not found")
+  }
+
+  Sentry.logger.info("Workflow renamed", { workflowId: id, orgId })
+
+  revalidatePath("/workflows", "layout")
 }
 
 export async function deleteWorkflowAction(id: string) {

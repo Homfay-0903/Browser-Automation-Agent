@@ -9,7 +9,6 @@ import {
   SidebarHeader,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
-import { createWorkflowAction } from "@/features/workflows/actions"
 import { WorkflowNav } from "@/features/workflows/components/workflow-nav"
 import { listWorkflows } from "@/features/workflows/data"
 
@@ -37,10 +36,7 @@ export async function AppSidebar({
         <SidebarTrigger />
       </SidebarHeader>
       <SidebarContent>
-        <WorkflowNav
-          workflows={workflows}
-          onCreateWorkflow={createWorkflowAction}
-        />
+        <WorkflowNav workflows={workflows} />
       </SidebarContent>
       <SidebarFooter className="group-data-[collapsible=icon]:items-center">
         <UserButton

@@ -1,8 +1,8 @@
 "use client"
 
-import { useEffect, useRef, useState, useTransition } from "react"
+import { useCallback, useEffect, useRef, useState, useTransition } from "react"
 import { useReactFlow, useStore } from "@xyflow/react"
-import { MoreHorizontal, Play, Square, Trash2 } from "lucide-react"
+import { MoreHorizontal, Pencil, Play, Square, Trash2 } from "lucide-react"
 import { toast } from "sonner"
 
 import {
@@ -12,6 +12,14 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Button } from "@/components/ui/button"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -27,6 +35,7 @@ import { Textarea } from "@/components/ui/textarea"
 import {
   cancelWorkflowRunAction,
   deleteWorkflowAction,
+  renameWorkflowAction,
   runWorkflowAction,
 } from "@/features/workflows/actions"
 import { NodeIcon } from "@/features/workflows/components/node-icon"
@@ -55,17 +64,20 @@ import {
 function Section({
   title,
   icon,
+  actions,
   children,
 }: {
   title: string
   icon?: React.ReactNode
+  actions?: React.ReactNode
   children: React.ReactNode
 }) {
   return (
     <div className="flex min-h-0 flex-1 flex-col">
       <div className="flex items-center gap-2 border-y border-border bg-card px-3 py-1.5 text-sm font-semibold">
         {icon}
-        {title}
+        <span className="flex-1">{title}</span>
+        {actions}
       </div>
       <div className="min-h-0 flex-1 overflow-y-auto">{children}</div>
     </div>
@@ -132,7 +144,7 @@ function Field({
 
 // The Editor tab: one input per field on the selected node, or an empty state.
 function Inspector({ node }: { node: StepNodeType | undefined }) {
-  const { updateNodeData } = useReactFlow<StepNodeType>()
+  const { updateNodeData, deleteElements } = useReactFlow<StepNodeType>()
   // Outputs of every node upstream of the selected one, as insertable {{ }}
   // tokens. Empty when nothing feeds into this node.
   const connections = useUpstreamConnections()
@@ -162,7 +174,20 @@ function Inspector({ node }: { node: StepNodeType | undefined }) {
   }
 
   return (
-    <Section title={title} icon={<NodeIcon type={type} />}>
+    <Section
+      title={title}
+      icon={<NodeIcon type={type} />}
+      actions={
+        <button
+          type="button"
+          onClick={() => deleteElements({ nodes: [{ id: node.id }] })}
+          className="rounded p-0.5 text-muted-foreground transition-colors hover:bg-destructive/10 hover:text-destructive"
+          aria-label="Delete node"
+        >
+          <Trash2 className="size-3.5" />
+        </button>
+      }
+    >
       <div className="flex flex-col gap-3 p-3">
         {def.fields.length === 0 ? (
           <p className="text-xs text-muted-foreground">No properties</p>
@@ -402,8 +427,44 @@ function RunButton({ workflowId }: { workflowId: string }) {
 // The sidebar itself — header on top, then the Toolbar / Editor tabs.
 // ---------------------------------------------------------------------------
 
-export function RightSidebar({ workflowId }: { workflowId: string }) {
+export function RightSidebar({
+  workflowId,
+  workflowName: initialName,
+}: {
+  workflowId: string
+  workflowName: string
+}) {
   const [tab, setTab] = useState("toolbar")
+  const [workflowName, setWorkflowName] = useState(initialName)
+  const [renameOpen, setRenameOpen] = useState(false)
+  const [renameValue, setRenameValue] = useState("")
+  const [isRenaming, setIsRenaming] = useState(false)
+
+  // Keep local name in sync if the prop changes (e.g. after a rename).
+  useEffect(() => {
+    setWorkflowName(initialName)
+  }, [initialName])
+
+  const handleRename = useCallback(async () => {
+    const trimmed = renameValue.trim()
+    if (!trimmed || trimmed === workflowName || isRenaming) return
+
+    setIsRenaming(true)
+    try {
+      await renameWorkflowAction({ id: workflowId, name: trimmed })
+      setWorkflowName(trimmed)
+      setRenameOpen(false)
+    } catch {
+      toast.error("Failed to rename workflow")
+    } finally {
+      setIsRenaming(false)
+    }
+  }, [renameValue, workflowName, workflowId, isRenaming])
+
+  const openRename = useCallback(() => {
+    setRenameValue(workflowName)
+    setRenameOpen(true)
+  }, [workflowName])
 
   const selected = useStore((s) => s.nodes.find((n) => n.selected)) as StepNodeType | undefined
 
@@ -427,10 +488,63 @@ export function RightSidebar({ workflowId }: { workflowId: string }) {
       groupResizeBehavior="preserve-pixel-size"
     >
       <Tabs value={tab} onValueChange={setTab} className="size-full gap-0">
-        <div className="flex items-center justify-between border-b border-border p-2">
+        <div className="flex items-center justify-between border-b border-border p-2 gap-2">
           <ActionsMenu workflowId={workflowId} />
+          <div className="flex min-w-0 flex-1 items-center justify-center gap-1">
+            <span className="truncate text-xs font-medium text-muted-foreground">
+              {workflowName}
+            </span>
+            <button
+              type="button"
+              onClick={openRename}
+              className="shrink-0 rounded p-0.5 text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+              aria-label="Rename workflow"
+            >
+              <Pencil className="size-3" />
+            </button>
+          </div>
           <RunButton workflowId={workflowId} />
         </div>
+
+        {/* Rename dialog */}
+        <Dialog open={renameOpen} onOpenChange={setRenameOpen}>
+          <DialogContent>
+            <DialogHeader>
+              <DialogTitle>Rename workflow</DialogTitle>
+              <DialogDescription>
+                Enter a new name for this workflow.
+              </DialogDescription>
+            </DialogHeader>
+            <div className="flex flex-col gap-1.5">
+              <Label htmlFor="rename-workflow">Name</Label>
+              <Input
+                id="rename-workflow"
+                value={renameValue}
+                onChange={(e) => setRenameValue(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") handleRename()
+                }}
+                placeholder="My workflow"
+                autoFocus
+              />
+            </div>
+            <DialogFooter>
+              <Button
+                variant="outline"
+                onClick={() => setRenameOpen(false)}
+                disabled={isRenaming}
+              >
+                Cancel
+              </Button>
+              <Button
+                onClick={handleRename}
+                disabled={!renameValue.trim() || renameValue.trim() === workflowName || isRenaming}
+              >
+                Save
+              </Button>
+            </DialogFooter>
+          </DialogContent>
+        </Dialog>
         <TabsList className="m-2 w-fit bg-background">
           <TabsTrigger
             value="toolbar"

@@ -8,6 +8,7 @@ import {
   ConnectionLineType,
   type ColorMode,
   type Edge,
+  type EdgeTypes,
   NodeTypes,
   Panel,
 } from "@xyflow/react"
@@ -15,6 +16,7 @@ import { useLiveblocksFlow, Cursors } from "@liveblocks/react-flow"
 import { AvatarStack } from "@liveblocks/react-ui";
 
 import { StepNode } from "@/features/workflows/components/step-node"
+import { DeletableEdge } from "@/features/workflows/components/deletable-edge"
 import type { StepNodeType } from "@/features/workflows/nodes/node-registry"
 
 import "@xyflow/react/dist/style.css"
@@ -22,6 +24,7 @@ import "@liveblocks/react-ui/styles.css";
 import "@liveblocks/react-flow/styles.css";
 
 const nodeTypes: NodeTypes = { step: StepNode }
+const edgeTypes: EdgeTypes = { deletable: DeletableEdge }
 
 const initialNodes: StepNodeType[] = [
   {
@@ -69,6 +72,7 @@ export function Canvas() {
     <div className="size-full">
       <ReactFlow
         nodeTypes={nodeTypes}
+        edgeTypes={edgeTypes}
         nodes={nodes}
         edges={edges}
         onNodesChange={onNodesChange}
@@ -80,7 +84,7 @@ export function Canvas() {
         connectionLineType={ConnectionLineType.SmoothStep}
         connectionLineStyle={{ stroke: "var(--border)" }}
         defaultEdgeOptions={{
-          type: "smoothstep",
+          type: "deletable",
           style: { stroke: "var(--border)" },
         }}
         style={
