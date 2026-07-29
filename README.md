@@ -5,8 +5,6 @@
 
 <h1>Browser Automation SaaS</h1>
 
-<p><strong>Design in real time. Execute in cloud browsers. Replay every run.</strong></p>
-
 <p>A collaborative visual workflow builder powered by Stagehand, Browserbase, Trigger.dev, and Liveblocks.</p>
 
 <p>
@@ -14,21 +12,10 @@
   <a href="#workflow-nodes">Nodes</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
   <a href="#getting-started">Quick start</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
   <a href="#deploy-on-railway">Deploy</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-  <a href="#how-it-works">Architecture</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-  <a href="#tutorial">Tutorial</a>
+  <a href="#how-it-works">Architecture</a>
 </p>
 
 <br />
-
-<p>
-  <a href="https://cwa.run/browserbase"><img src="https://img.shields.io/badge/Browserbase-0A0A0A?style=for-the-badge" alt="Browserbase" /></a>&nbsp;
-  <a href="https://cwa.run/trigger"><img src="https://img.shields.io/badge/Trigger.dev-635BFF?style=for-the-badge" alt="Trigger.dev" /></a>&nbsp;
-  <a href="https://cwa.run/liveblocks"><img src="https://img.shields.io/badge/Liveblocks-111111?style=for-the-badge" alt="Liveblocks" /></a>&nbsp;
-  <a href="https://cwa.run/neon"><img src="https://img.shields.io/badge/Neon-00E599?style=for-the-badge&logo=neon&logoColor=black" alt="Neon" /></a>&nbsp;
-  <a href="https://cwa.run/clerk"><img src="https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge&logo=clerk&logoColor=white" alt="Clerk" /></a>&nbsp;
-  <a href="https://cwa.run/sentry"><img src="https://img.shields.io/badge/Sentry-362D59?style=for-the-badge&logo=sentry&logoColor=white" alt="Sentry" /></a>&nbsp;
-  <a href="https://cwa.run/railway"><img src="https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white" alt="Railway" /></a>
-</p>
 
 </div>
 
@@ -36,53 +23,9 @@
 
 ![Collaborative browser automation workflow canvas](./design/canvas-2.png)
 
-<p align="center"><sub>Build together on a live canvas, then follow every node from execution to output.</sub></p>
-
 <br />
 
 > Build automations as connected nodes, watch every step execute live, and inspect the complete browser session when the run is finished.
-
----
-
-## Tutorial
-
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=1hnyCQW-B4A"><img src="https://img.shields.io/badge/YouTube-Watch_the_full_tutorial-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch the full tutorial on YouTube" /></a>
-</p>
-
-Each chapter has a matching branch so you can check out the code at any point in the tutorial:
-
-| Branch | Chapter |
-|--------|---------|
-| `main` | Final project |
-| `chapter-02-agentic-coding-setup` | Agentic coding setup |
-| `chapter-03-auth-setup` | Clerk authentication setup |
-| `chapter-04-organizations-setup` | Clerk organizations setup |
-| `chapter-05-dashboard-layout` | Dashboard layout |
-| `chapter-06-database-setup` | Neon and Drizzle database setup |
-| `chapter-07-workflow-page` | Workflow page |
-| `chapter-08-trigger-dev-setup` | Trigger.dev setup |
-| `chapter-09-canvas-setup` | React Flow canvas setup |
-| `chapter-10-custom-nodes` | Custom workflow nodes |
-| `chapter-11-liveblocks-setup` | Liveblocks collaboration setup |
-| `chapter-12-liveblocks-auth` | Liveblocks authentication |
-| `chapter-13-names-and-avatars` | Collaborator names and avatars |
-| `chapter-14-workflow-toolbar` | Workflow toolbar |
-| `chapter-15-workflow-execution` | Workflow execution |
-| `chapter-16-browserbase-setup` | Browserbase and Stagehand setup |
-| `chapter-17-data-passthrough` | Data passthrough between nodes |
-| `chapter-18-live-run-status` | Live workflow run status |
-| `chapter-19-remaining-nodes` | Additional browser nodes |
-| `chapter-20-email-node` | Resend email node |
-| `chapter-21-console-panel` | Run console panel |
-| `chapter-22-session-replay` | Browserbase session replay |
-| `chapter-23-billing` | Clerk Billing and Pro features |
-| `chapter-24-sentry-setup` | Sentry monitoring setup |
-| `chapter-25-polish` | Final product polish |
-
-```bash
-git checkout chapter-16-browserbase-setup  # example: jump to Browserbase setup
-```
 
 ---
 
@@ -152,13 +95,13 @@ git checkout chapter-16-browserbase-setup  # example: jump to Browserbase setup
 ### Prerequisites
 
 - Node.js and npm
-- [Clerk](https://cwa.run/clerk) application with Organizations enabled
-- PostgreSQL database, such as [Neon](https://cwa.run/neon)
-- [Trigger.dev](https://cwa.run/trigger) project
-- [Liveblocks](https://cwa.run/liveblocks) project
-- [Browserbase](https://cwa.run/browserbase) account
-- [Resend](https://resend.com/) account
-- Optional [Sentry](https://cwa.run/sentry) project for error monitoring and source maps
+- Clerk application with Organizations enabled
+- PostgreSQL database (such as Neon)
+- Trigger.dev project
+- Liveblocks project
+- Browserbase account
+- Resend account
+- Optional Sentry project for error monitoring and source maps
 
 ### 1. Clone and install
 
@@ -253,7 +196,7 @@ Open [http://localhost:3000](http://localhost:3000), sign in, select or create a
 
 ## Deploy on Railway
 
-[Railway](https://cwa.run/railway) can build and host the Next.js application directly from this repository.
+Railway can build and host the Next.js application directly from this repository.
 
 ### 1. Create the service
 
