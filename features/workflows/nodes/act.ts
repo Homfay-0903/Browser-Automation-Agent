@@ -25,7 +25,7 @@ export async function act({
     logger.log("Act completed, pressing Enter to submit")
     await page.keyPress("Enter")
     // Allow time for navigation / search results to load
-    await page.waitForLoadState("domcontentloaded", { timeout: 15_000 }).catch(() => {
+    await page.waitForLoadState("domcontentloaded", 15_000).catch(() => {
       logger.log("Page did not reach domcontentloaded after submit, continuing")
     })
   }
