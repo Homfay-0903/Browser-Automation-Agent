@@ -1,7 +1,7 @@
 import * as Sentry from "@sentry/nextjs"
 import { auth, currentUser } from "@clerk/nextjs/server"
 
-import { liveblocks } from "@/lib/liveblocks"
+import { getLiveblocks } from "@/lib/liveblocks"
 
 export async function POST() {
   const { userId, orgId } = await auth()
@@ -24,7 +24,7 @@ export async function POST() {
 
   // Identify the user with an ID token. Permissions are resolved per-room
   // from the user's groups — scope access to their Clerk organization.
-  const { status, body } = await liveblocks.identifyUser(
+  const { status, body } = await getLiveblocks().identifyUser(
     {
       userId,
       groupIds: [orgId],

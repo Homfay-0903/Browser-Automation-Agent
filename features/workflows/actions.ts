@@ -8,7 +8,7 @@ import { redirect } from "next/navigation"
 
 import type { runWorkflowTask } from "@/features/workflows/tasks/run-workflow";
 
-import { liveblocks } from "@/lib/liveblocks"
+import { getLiveblocks } from "@/lib/liveblocks"
 import { createWorkflow, deleteWorkflow, renameWorkflow, saveWorkflowGraph } from "@/features/workflows/data"
 import { WorkflowGraph } from "@/lib/db/schema"
 
@@ -85,7 +85,7 @@ export async function deleteWorkflowAction(id: string) {
   }
 
   // The workflow id doubles as its Liveblocks room id — clean it up too.
-  await liveblocks.deleteRoom(id)
+  await getLiveblocks().deleteRoom(id)
 
   Sentry.logger.info("Workflow deleted", { workflowId: id, orgId })
 
