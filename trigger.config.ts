@@ -23,14 +23,16 @@ export default defineConfig({
   build: {
     extensions: [
       playwright({
-        // Pin to the last Playwright whose `install --dry-run` prints the
-        // "browser: chromium" block the extension parses. Newer builds (1.49+,
-        // Chrome for Testing) changed the format and the grep fails at build
-        // time. The local `playwright` devDependency must match, since the
-        // extension prefers the version it finds in the bundle's externals.
-        version: "1.48.0",
+        // 1.49.0 is the one version whose `install --dry-run` still prints the
+        // old "browser: chromium" / "browser: chromium-headless-shell" blocks
+        // the extension greps for, AND lists a separate headless-shell build
+        // (which the extension's headless:false path also greps for). 1.48.x
+        // lacks the headless-shell entry; 1.50+ switched to the Chrome for
+        // Testing format. The local `playwright` devDependency must match,
+        // since the extension prefers the version in the bundle's externals.
+        version: "1.49.0",
         // chrome-launcher (used by Stagehand's env:"LOCAL") needs a full Chrome
-        // binary, not just chromium-headless-shell, so install both.
+        // binary, so install both chromium and chromium-headless-shell.
         headless: false,
       }),
     ],
