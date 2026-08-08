@@ -1,4 +1,5 @@
 import { defineConfig } from "@trigger.dev/sdk";
+import { playwright } from "@trigger.dev/build/extensions/playwright";
 
 export default defineConfig({
   project: "proj_rwgdoalvitmqhclxramk",
@@ -19,4 +20,17 @@ export default defineConfig({
     },
   },
   dirs: ["features"],
+  build: {
+    extensions: [
+      playwright({
+        // Matches @playwright/test / playwright-core pinned in package-lock.json.
+        // The extension installs this exact Playwright build's Chromium so the
+        // runtime `chromium.executablePath()` resolves to a real binary.
+        version: "1.62.0",
+        // chrome-launcher (used by Stagehand's env:"LOCAL") needs a full Chrome
+        // binary, not just chromium-headless-shell, so install both.
+        headless: false,
+      }),
+    ],
+  },
 });

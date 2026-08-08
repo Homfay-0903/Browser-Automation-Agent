@@ -108,6 +108,24 @@ export const runWorkflowTask = task({
           }
         }
 
+        // chrome-launcher needs a Chrome/Chromium executable. Locally Playwright
+        // auto-detects a system install; the Trigger.dev worker container has no
+        // browser by default, so resolve the Chromium the playwright build
+        // extension installed into /ms-playwright and hand it to chrome-launcher
+        // via executablePath. Fall back to CHROME_PATH if it's set explicitly.
+        let chromePath = process.env.CHROME_PATH
+        if (!chromePath) {
+          try {
+            const { chromium } = await import("playwright")
+            chromePath = chromium.executablePath()
+            logger.log(`Using Chromium at ${chromePath}`)
+          } catch (error) {
+            logger.log(
+              `Could not resolve Chromium via playwright (${(error as Error).message}); relying on system Chrome`,
+            )
+          }
+        }
+
         // Launch a local Chromium via Playwright (bundled with Stagehand).
         // No remote CDP URL — env: "LOCAL" without cdpUrl tells Stagehand to
         // launch its own browser process. This avoids the Browserless CDP
@@ -118,6 +136,7 @@ export const runWorkflowTask = task({
           model: modelConfig,
           localBrowserLaunchOptions: {
             headless: true,
+            executablePath: chromePath,
             args: [
               "--disable-features=WebSocketPermessageDeflate",
               "--no-sandbox",
