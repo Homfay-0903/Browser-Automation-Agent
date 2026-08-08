@@ -1,3 +1,4 @@
+import { existsSync } from "node:fs"
 import toposort from "toposort"
 import { logger, metadata, task } from "@trigger.dev/sdk"
 import type { DeserializedJson } from "@trigger.dev/core"
@@ -117,8 +118,14 @@ export const runWorkflowTask = task({
         if (!chromePath) {
           try {
             const { chromium } = await import("playwright")
-            chromePath = chromium.executablePath()
-            logger.log(`Using Chromium at ${chromePath}`)
+            const candidate = chromium.executablePath()
+            // Only use the resolved path if the binary actually exists. In local
+            // dev the Playwright browsers may not be installed — in that case
+            // leave chromePath unset and let chrome-launcher find a system Chrome.
+            if (existsSync(candidate)) {
+              chromePath = candidate
+              logger.log(`Using Chromium at ${chromePath}`)
+            }
           } catch (error) {
             logger.log(
               `Could not resolve Chromium via playwright (${(error as Error).message}); relying on system Chrome`,
