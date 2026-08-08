@@ -14,7 +14,7 @@
     "db:migrate": "drizzle-kit migrate",
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
-    "deploy:trigger": "trigger.dev deploy"
+    "deploy:trigger": "trigger deploy"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",
