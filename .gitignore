@@ -37,4 +37,7 @@ pnpm-debug.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# playwright MCP debug snapshots
+.playwright-mcp/
+
 .trigger
